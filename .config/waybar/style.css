@@ -28,6 +28,7 @@ tooltip label {
     margin-bottom: 3px;
     border-radius: 4px;
     margin-left: 5px;
+    padding-right: 5px;
 }
 #workspaces button {
     padding: 5px 5px;
@@ -42,13 +43,14 @@ tooltip label {
 }
 
 #workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
+    /* background: #64727D; */
+    /* border-bottom: 3px solid white; */
 }
 
 #workspaces button:hover{
     border-radius: 6px;
-    background-color: rgba(114, 101, 138, 0.8);
+    /* background-color: rgba(114, 101, 138, 0.8); */
+    box-shadow: inset 2px 2px 2px #000000;
 
 }
 
@@ -57,7 +59,7 @@ tooltip label {
 }
 
 #mode {
-    background: #64727D;
+    /* background: #64727D; */
     border-bottom: 3px solid white;
 }
 
@@ -132,7 +134,7 @@ tooltip label {
     padding-right: 10px;
 }
 #custom-updates{
-    padding-right: 10px;
+    padding-left: 10px;
 
     
 }
@@ -160,11 +162,12 @@ tooltip label {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
-    background-color: rgba(114, 101, 138, 0.8);
+    background-color: rgba(114, 101, 138, 0.5);
     margin-bottom: 3px;
     margin-top: 3px;
     margin-right: 5px;
     border-radius: 4px;
+    margin-left: 5px;
 }
 
 #custom-name{
@@ -175,6 +178,13 @@ padding-left: 20px;
 padding-right: 20px;
 margin-top: 3px;
 margin-bottom: 3px;
+}
+#wlr-taskbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(114, 101, 138, 0.5);
+
+
 }
     
 

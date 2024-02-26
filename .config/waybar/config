@@ -6,9 +6,9 @@
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["custom/menu", "hyprland/workspaces",],
-    "modules-center": ["custom/name"],
-    "modules-right": ["network", "custom/div", "pulseaudio", "custom/div", "temperature", "custom/div", "clock", "tray"],
+    "modules-left": ["custom/menu", "hyprland/workspaces", "custom/updates"],
+    "modules-center": ["custom/playerctl", "custom/playerlabel"],
+    "modules-right": ["network", "custom/div", "pulseaudio", "custom/div", "clock", "tray", "custom/power"],
 
     "keyboard-state": {
         "numlock": true,
@@ -76,7 +76,7 @@
         "format": "{}% "
     },
     "temperature": {
-        "thermal-zone": 2,
+        "thermal-zone": 1,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C {icon}",
@@ -218,6 +218,14 @@
         "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true,
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 15,
+        //"icon-theme": "Numix-Circle",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
     },
     
 
