@@ -5,6 +5,8 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 
 ![ss](https://github.com/xsghetti/dotfiles/assets/150515748/0a04d1d5-05ac-4f12-8544-d38917aa3135)
 
+![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/64ca9d2f-571e-409a-97a4-f2fa9bdba498)
+
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
 >  [!Caution]
