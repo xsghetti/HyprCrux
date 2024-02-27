@@ -8,9 +8,13 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
 >  [!Caution]
->   ## Requires: <br>
+>  These are my personal dots and may not work for you. my configs are messy as I'm not a dev, so use at your own risk.
+>  ## Requires <br>
 >  [hyprland](https://hyprland.org)<br>
->  [hyprpm](https://github.com/hyprland-community/awesome-hyprland#plugins) <br>
+>  [hyprpm](https://github.com/hyprland-community/awesome-hyprland#plugins)<br>
+>  [hycov](https://github.com/DreamMaoMao/hycov)<br>
+>  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
+>  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pywal](https://github.com/dylanaraps/pywal)
 
 <table><tr><td>
