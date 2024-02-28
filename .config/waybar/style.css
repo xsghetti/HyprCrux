@@ -6,11 +6,11 @@
     font-size: 13px;
     min-height: 0;
 }
-
+@import '/home/crux/.cache/wal/colors-waybar.css';
 window#waybar {
     background: transparent;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: white;
+    color: @foreground;
 }
 
 
@@ -33,7 +33,7 @@ tooltip label {
 #workspaces button {
     padding: 5px 5px;
     background: transparent;
-    color: white;
+    color: @foreground;
     border-bottom: 3px solid transparent;
     margin-top: 3px;
     margin-left: 3px;
@@ -50,7 +50,7 @@ tooltip label {
 #workspaces button:hover{
     border-radius: 6px;
     /* background-color: rgba(114, 101, 138, 0.8); */
-    box-shadow: inset 2px 2px 2px #000000;
+    box-shadow: inset 2px 2px 2px @foreground;
 
 }
 
@@ -69,6 +69,7 @@ tooltip label {
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
+    color: @foreground;
 }
 #custom-div{
     background-color: rgba(114, 101, 138, 0.5);
@@ -118,6 +119,7 @@ tooltip label {
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 5px;
+    color: @foreground;
 
 }
 
@@ -135,7 +137,7 @@ tooltip label {
 }
 #custom-updates{
     padding-left: 10px;
-
+    color: @foreground;
     
 }
 #pulseaudio.muted{
@@ -152,6 +154,7 @@ tooltip label {
     border-radius: 4px;
     padding-right: 2px;
     background-color: rgba(114, 101, 138, 0.5);
+    color: @foreground;
 }
 #network{
     border-radius: 4px 0px 0px 4px;
