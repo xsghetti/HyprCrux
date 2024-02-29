@@ -16,7 +16,7 @@ swww img ${DIR}/${RANDOMPICS} --transition-fps 60 --transition-type any --transi
 
 wal -i ~/.config/rofi/.current_wallpaper
 
-~/.config/.scripts/swww.sh
+~/.config/hypr/scripts/swww.sh
 
 _ps=(waybar)
 for _prs in "${_ps[@]}"; do
