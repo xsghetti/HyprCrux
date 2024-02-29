@@ -20,8 +20,7 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 >  [pywal](https://github.com/dylanaraps/pywal)
 >  [pyprland](https://github.com/hyprland-community/pyprland)
 >
-> ```Hyprpm requires: meson & cpio``` <br>
-> ```Must change script paths to your username in hypr/keybindings.conf```  
+> ```Hyprpm requires: meson & cpio``` <br>  
 
 <table><tr><td>
 <code>D</code><br><code>E</code><br><code>T</code><br><code>A</code><br><code>I</code><br><code>L</code><br><code>S</code><br></td><td><table>
