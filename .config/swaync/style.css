@@ -1,14 +1,4 @@
-@define-color cc-bg rgba(26, 27, 38, 1);
-@define-color noti-border-color rgba(255, 255, 255, 0.15);
-@define-color noti-bg rgb(17, 17, 27);
-@define-color noti-bg-darker rgb(43, 43, 57);
-@define-color noti-bg-hover rgb(27, 27, 43);
-@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
-@define-color noti-close-bg rgba(255, 255, 255, 0.1);
-@define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
-@define-color text-color rgba(169, 177, 214, 1);
-@define-color text-color-disabled rgb(150, 150, 150);
-@define-color bg-selected rgb(0, 128, 255);
+@import '../../.cache/wal/colors-waybar.css';
 
 * {
   
@@ -19,7 +9,7 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
   opacity: 1;
-  background: @noti-bg-darker;
+  background: @color0;
 }
 
 .notification-row {
@@ -66,7 +56,7 @@
 }
 
 .notification-action {
-  border: 2px solid #34548a;
+  border: 2px solid @color7;
   border-top: none;
   border-radius: 5px;
 }
@@ -105,14 +95,14 @@
   background: @noti-bg-darker;
   color: @text-color;
   caret-color: @text-color;
-  border: 1px solid @noti-border-color;
+  border: 1px solid @color7;
   border-radius: 5px;
 }
 
 .inline-reply-button {
   margin-left: 4px;
   background: @noti-bg;
-  border: 1px solid @noti-border-color;
+  border: 1px solid @color7;
   border-radius: 5px;
   color: @text-color;
 }
@@ -159,8 +149,8 @@
 }
 
 .control-center {
-  background: @cc-bg;
-  border: 2px solid #34548a;
+  background: @color2;
+  border: 2px solid @color6;
   border-radius: 5px;
 }
 
@@ -177,54 +167,60 @@
 }
 
 .blank-window {
-  background: alpha(black, 0.1);
+  background: @transparent;
 }
 
+/* Notification Center Title */
 .widget-title {
-  color: #7aa2f7;
-  background: @noti-bg-darker;
+  color: @color7;
+  background: @color1;
   padding: 5px 10px;
   margin: 10px 10px 5px 10px;
   font-size: 1.5rem;
   border-radius: 5px;
+  border: 2px solid @color7;
 }
 
+/* Clear All Button */
 .widget-title > button {
   font-size: 1rem;
-  color: @text-color;
+  color: @foreground;
   text-shadow: none;
-  background: @noti-bg;
+  background: @color1;
   box-shadow: none;
   border-radius: 5px;
+  border: 2px solid @color7;
 }
 
+/* Clear All Button - Hover */
 .widget-title > button:hover {
-  background: #f7768e;
-  color: @cc-bg;
+  background: @color1;
+  color: @color6;
 }
 
 .widget-dnd {
-  background: @noti-bg-darker;
+  background: @color1;
   padding: 5px 10px;
   margin: 5px 10px 10px 10px;
   border-radius: 5px;
   font-size: large;
-  color: #7aa2f7;
+  color: @color7;
+  border: 2px solid @color7;
 }
 
 .widget-dnd > switch {
   border-radius: 5px;
-  /* border: 1px solid #7aa2f7; */
-  background: #7aa2f7;
+  border: 1px solid @color7;
+  background: @color1;
 }
 
 .widget-dnd > switch:checked {
   background: #f7768e;
-  border: 1px solid #f7768e;
+  border: 1px solid black;
 }
 
 .widget-dnd > switch slider {
-  background: @cc-bg;
+  background: @color7;
   border-radius: 5px;
 }
 
@@ -239,19 +235,22 @@
 
 .widget-label > label {
   font-size: 1rem;
-  color: @text-color;
+  color: @color1;
 }
 
 .widget-mpris {
-  color: @text-color;
-  background: @noti-bg-darker;
+  color: @color7;
+  background: @color1;
   padding: 5px 10px;
   margin: 5px 10px 5px 10px;
   border-radius: 5px;
+  border: 2px solid @color7;
 }
 
 .widget-mpris > box > button {
   border-radius: 5px;
+  /* border: 2px solid @color7; */
+  color: @color7;
 }
 
 .widget-mpris-player {
@@ -273,19 +272,23 @@
   padding: 5px;
   margin: 5px 10px 10px 10px;
   border-radius: 5px;
-  background: @noti-bg-darker;
+  background: @color2;
+  border: 2px solid @color7;
+
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
   margin: 3px;
-  background: @cc-bg;
+  background: @color1;
   border-radius: 5px;
-  color: @text-color;
+  color: @color7;
+  border: 2px solid @color7;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-  background: rgba(122, 162, 247, 1);
-  color: @cc-bg;
+  background: @color1;
+  color: @color6;
+  border: 2px solid @color7;
 }
 
 .widget-menubar > box > .menu-button-bar > button {
