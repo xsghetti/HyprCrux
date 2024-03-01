@@ -5,6 +5,6 @@ plugins = ["scratchpads"]
 animation = "fromTop"
 command = "kitty --class kitty-dropterm"
 class = "kitty-dropterm"
-size = "60% 20%"
+size = "60% 30%"
 max_size = "1920px 40%"
 margin = 50
