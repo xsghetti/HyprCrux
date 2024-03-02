@@ -25,10 +25,10 @@
 }
 
 .notification-content {
-  background: @cc-bg;
+  background: @color1;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid #34548a;
+  border: 2px solid @color7;
   margin: 0;
 }
 
@@ -92,9 +92,9 @@
 }
 
 .inline-reply-entry {
-  background: @noti-bg-darker;
-  color: @text-color;
-  caret-color: @text-color;
+  background: @color1;
+  color: @color7;
+  caret-color: @color7;
   border: 1px solid @color7;
   border-radius: 5px;
 }
@@ -127,7 +127,7 @@
   font-size: 16px;
   font-weight: 700;
   background: transparent;
-  color: rgba(158, 206, 106, 1);
+  color: @color7;
   text-shadow: none;
 }
 
@@ -144,12 +144,12 @@
   font-size: 15px;
   font-weight: 400;
   background: transparent;
-  color: @text-color;
+  color: @color6;
   text-shadow: none;
 }
 
 .control-center {
-  background: @color2;
+  background: @background;
   border: 2px solid @color6;
   border-radius: 5px;
 }
@@ -272,7 +272,7 @@
   padding: 5px;
   margin: 5px 10px 10px 10px;
   border-radius: 5px;
-  background: @color2;
+  background: @background;
   border: 2px solid @color7;
 
 }
@@ -286,7 +286,7 @@
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-  background: @color1;
+  background: @color2;
   color: @color6;
   border: 2px solid @color7;
 }
