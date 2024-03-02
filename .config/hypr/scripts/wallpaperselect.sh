@@ -97,3 +97,5 @@ done
 sleep 1
 # Relaunch waybar
 waybar &
+
+~/.config/hypr/scripts/refresh.sh
