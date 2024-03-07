@@ -3,7 +3,8 @@
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
+[![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink&link=https%3A%2F%2Fgithub.com%2Fxsghetti%2Fdotfiles
+)
 
 
 </div>
