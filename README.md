@@ -17,7 +17,7 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 >  [hycov](https://github.com/DreamMaoMao/hycov)<br>
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
->  [pywal](https://github.com/dylanaraps/pywal)
+>  [pywal](https://github.com/dylanaraps/pywal) <br>
 >  [pyprland](https://github.com/hyprland-community/pyprland)
 >
 > ```Hyprpm requires: meson & cpio``` <br>
