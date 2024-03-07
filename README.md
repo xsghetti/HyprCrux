@@ -1,6 +1,13 @@
 <h1 align="center">HyprCrux Dots</h1>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
 
+<div align="center">
+
+![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
+
+
+</div>
+
 https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-effecf960f6e
 
 ![ss](https://github.com/xsghetti/dotfiles/assets/150515748/0a04d1d5-05ac-4f12-8544-d38917aa3135)
