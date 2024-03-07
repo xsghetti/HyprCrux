@@ -3,7 +3,7 @@
 
 <div align="center">
 
-https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink
+![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 
 </div>
 
