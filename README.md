@@ -40,5 +40,6 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 
 
 > [!IMPORTANT]  
-> Other QoL packages
-> kservice5
+> Other QoL packages <br>
+
+    sudo pacman -S hyprland discord kservice5 otf-font-awesome ttf-firacode-nerd ttf-arimo-nerd noto-fonts brightnessctl qt5ct qt6ct waybar sddm polkit-kde-agent pipewire pipewire-pulse pipewire-jack sof-firmware nwg-look
