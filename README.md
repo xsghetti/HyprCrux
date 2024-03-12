@@ -39,5 +39,6 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 </td></tr></table>
 
 
-<details>
-</details>
+> [!IMPORTANT]  
+> Other QoL packages
+> kservice5
