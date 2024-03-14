@@ -6,7 +6,7 @@
     font-size: 13px;
     min-height: 0;
 }
-@import '$HOME/.cache/wal/colors-waybar.css';
+@import '../../.cache/wal/colors-waybar.css';
 window#waybar {
     background: transparent;
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
