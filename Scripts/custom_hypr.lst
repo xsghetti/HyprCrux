@@ -64,6 +64,7 @@ dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 visual-studio-code-bin                                 # ide text editor
+cava                                                   # audio visualizer
 
 
 # --------------------------------------------------- // Shell
