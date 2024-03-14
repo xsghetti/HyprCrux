@@ -54,6 +54,8 @@ should disappear.
 >
 > ```To get cava working with pywal - symlink template to cava/config```
 
+    ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
+
 > Hycov Keybindings will be commented out by default
 to prevent the error message caused by HyprPM.<br>
 HyprTrails is also coded into hyprland.conf but will
