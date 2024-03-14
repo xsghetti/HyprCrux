@@ -65,6 +65,8 @@ ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 visual-studio-code-bin                                 # ide text editor
 cava                                                   # audio visualizer
+discord
+
 
 
 # --------------------------------------------------- // Shell
@@ -74,3 +76,7 @@ zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
 lsd|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt
 neofetch                                               # fetch tool
+otf-font-awesome
+ttf-firacode-nerd
+ttf-arimo-nerd noto-fonts
+python-pywal
