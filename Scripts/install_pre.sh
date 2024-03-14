@@ -1,8 +1,9 @@
+
 #!/bin/bash
-#|---/ /+-------------------------------------+---/ /|#
-#|--/ /-| Script to apply pre install configs |--/ /-|#
-#|-/ /--| Prasanth Rangan                     |-/ /--|#
-#|/ /---+-------------------------------------+/ /---|#
+#|---/ /+------------------------------------+---/ /|#
+#|--/ /-| Script to generate wallpaper cache |--/ /-|#
+#|-/ /--| Kemipso                            |-/ /--|#
+#|/ /---+------------------------------------+/ /---|#
 
 source global_fn.sh
 if [ $? -ne 0 ] ; then
@@ -10,66 +11,98 @@ if [ $? -ne 0 ] ; then
     exit 1
 fi
 
+if ! pkg_installed imagemagick || ! pkg_installed parallel 
+then
+    echo "ERROR : dependency failed, imagemagick/parallel is not installed..."
+    exit 0
+fi
 
-# grub
-if pkg_installed grub && [ -f /boot/grub/grub.cfg ]
-    then
-    echo -e "\033[0;32m[BOOTLOADER]\033[0m detected // grub"
 
-    if [ ! -f /etc/default/grub.t2.bkp ] && [ ! -f /boot/grub/grub.t2.bkp ]
-        then
-        echo -e "\033[0;32m[BOOTLOADER]\033[0m configuring grub..."
-        sudo cp /etc/default/grub /etc/default/grub.t2.bkp
-        sudo cp /boot/grub/grub.cfg /boot/grub/grub.t2.bkp
+# set variables
+ctlLine=`grep '^1|' ${ThemeCtl}`
+export cacheDir="$HOME/.cache/hyprdots"
 
-        if nvidia_detect
-            then
-            echo -e "\033[0;32m[BOOTLOADER]\033[0m nvidia detected, adding nvidia_drm.modeset=1 to boot option..."
-            gcld=$(grep "^GRUB_CMDLINE_LINUX_DEFAULT=" "/etc/default/grub" | cut -d'"' -f2 | sed 's/\b nvidia_drm.modeset=.\b//g')
-            sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"${gcld} nvidia_drm.modeset=1\"" /etc/default/grub
+
+# evaluate options
+while getopts "fc:" option ; do
+    case $option in
+    f ) # force remove cache
+        rm -Rf ${cacheDir}
+        echo "Cache dir ${cacheDir} cleared...";;
+    c ) # use custom wallpaper
+        inWall="$OPTARG"
+        if [[ "${inWall}" == '~'* ]]; then
+            inWall="$HOME${inWall:1}"
         fi
+        if [[ -f "${inWall}" ]] ; then
+            if [ `echo "$ctlLine" | wc -l` -eq "1" ] ; then
+                curTheme=$(echo "$ctlLine" | cut -d '|' -f 2)
+                awk -F '|' -v thm="${curTheme}" -v wal="${inWall}" '{OFS=FS} {if($2==thm)$NF=wal;print$0}' "${ThemeCtl}" > /tmp/t2 && mv /tmp/t2 "${ThemeCtl}"
+            else
+                echo "ERROR : ${ThemeCtl} Unable to fetch theme..."
+                exit 1
+            fi
+        else
+            echo "ERROR: wallpaper ${inWall} not found..."
+            exit 1
+        fi ;;
+    * ) # invalid option
+        echo "...valid options are..."   
+    	echo "./create_cache.sh -f                      # force create thumbnails (delete old cache)"
+        echo "./create_cache.sh -c /path/to/wallpaper   # generate cache for custom walls"
+        exit 1 ;;
+    esac
+done
+
+shift $((OPTIND - 1))
+ctlRead=$(awk -F '|' -v thm="${1}" '{if($2==thm) print$0}' "${ThemeCtl}")
+[ -z "${ctlRead}" ] && ctlRead=$(cat "${ThemeCtl}")
 
 
-# systemd-boot
-if pkg_installed systemd && nvidia_detect && [ $(bootctl status | awk '{if ($1 == "Product:") print $2}') == "systemd-boot" ]
-    then
-    echo -e "\033[0;32m[BOOTLOADER]\033[0m detected // systemd-boot"
+# magick function
+imagick_t2 () {
+    theme="$1"
+    wpFullName="$2"
+    wpBaseName=$(basename "${wpFullName}")
 
-    if [ $(ls -l /boot/loader/entries/*.conf.t2.bkp 2> /dev/null | wc -l) -ne $(ls -l /boot/loader/entries/*.conf 2> /dev/null | wc -l) ]
-        then
-        echo "nvidia detected, adding nvidia_drm.modeset=1 to boot option..."
-        find /boot/loader/entries/ -type f -name "*.conf" | while read imgconf
-        do
-            sudo cp ${imgconf} ${imgconf}.t2.bkp
-            sdopt=$(grep -w "^options" ${imgconf} | sed 's/\b quiet\b//g' | sed 's/\b splash\b//g' | sed 's/\b nvidia_drm.modeset=.\b//g')
-            sudo sed -i "/^options/c${sdopt} quiet splash nvidia_drm.modeset=1" ${imgconf}
-        done
-    else
-        echo -e "\033[0;33m[SKIP]\033[0m systemd-boot is already configured..."
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}" ]; then
+        convert "${wpFullName}"[0] -thumbnail 500x500^ -gravity center -extent 500x500 "${cacheDir}/${theme}/${wpBaseName}"
     fi
-fi
+
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.rofi" ]; then
+        convert -strip -resize 2000 -gravity center -extent 2000 -quality 90 "${wpFullName}"[0] "${cacheDir}/${theme}/${wpBaseName}.rofi"
+    fi
+
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.blur" ]; then
+        convert -strip -scale 10% -blur 0x3 -resize 100% "${wpFullName}"[0] "${cacheDir}/${theme}/${wpBaseName}.blur"
+    fi
+
+    if [ ! -f "${cacheDir}/${theme}/${wpBaseName}.dcol" ] ; then
+        ./wallbash.sh "${wpFullName}" &> /dev/null
+    fi
+}
+
+export -f imagick_t2
 
 
-# pacman
-if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]
-    then
-    echo -e "\033[0;32m[PACMAN]\033[0m adding extra spice to pacman..."
+# create thumbnails for each theme > wallpapers
+echo "${ctlRead}" | while read ctlLine
+do
+    theme=$(echo $ctlLine | awk -F '|' '{print $2}')
+    fullPath=$(echo "$ctlLine" | awk -F '|' '{print $NF}' | sed "s+~+$HOME+")
+    wallPath=$(dirname "$fullPath")
+    mkdir -p ${cacheDir}/${theme}
+    mapfile -d '' wpArray < <(find "${wallPath}" -type f \( -iname "*.gif" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -print0 | sort -z)
+    echo "Creating thumbnails for ${theme} [${#wpArray[@]}]"
+    parallel --bar imagick_t2 ::: "${theme}" ::: "${wpArray[@]}"
 
-    sudo cp /etc/pacman.conf /etc/pacman.conf.t2.bkp
-    sudo sed -i "/^#Color/c\Color\nILoveCandy
-    /^#VerbosePkgLists/c\VerbosePkgLists
-    /^#ParallelDownloads/c\ParallelDownloads = 5" /etc/pacman.conf
-    sudo sed -i '/^#\[multilib\]/,+1 s/^#//' /etc/pacman.conf
-
-    #if [ $(grep -w "^\[xero_hypr\]" /etc/pacman.conf | wc -l) -eq 0 ] && [ $(grep "https://repos.xerolinux.xyz/xero_hypr/x86_64/" /etc/pacman.conf | wc -l) -eq 0 ]
-    #    then
-    #    echo "adding [xero_hypr] repo to pacman..."
-    #    echo -e "\n[xero_hypr]\nSigLevel = Required DatabaseOptional\nServer = https://repos.xerolinux.xyz/xero_hypr/x86_64/\n\n" | sudo tee -a /etc/pacman.conf
-    #fi
-    sudo pacman -Syyu
-    sudo pacman -Fy
-
-else
-    echo -e "\033[0;33m[SKIP]\033[0m pacman is already configured..."
-fi
+    if pkg_installed code ; then
+        if [ ! -z "$(echo $ctlLine | awk -F '|' '{print $3}')" ] ; then
+            codex=$(echo $ctlLine | awk -F '|' '{print $3}' | cut -d '~' -f 1)
+            if [ $(code --list-extensions |  grep -iwc "${codex}") -eq 0 ] ; then
+                code --install-extension "${codex}" 2> /dev/null || true
+            fi
+        fi
+    fi
+done
 
