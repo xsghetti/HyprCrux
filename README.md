@@ -15,6 +15,10 @@
 >  If you aren't using the script - these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
+
+https://github.com/xsghetti/dotfiles/assets/150515748/54886705-d963-45b8-9ce3-1b6d82cf5a98
+
+
 https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-effecf960f6e
 
 ![ss](https://github.com/xsghetti/dotfiles/assets/150515748/0a04d1d5-05ac-4f12-8544-d38917aa3135)
