@@ -22,7 +22,7 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 >  ## Requires <br>
 >  [hyprland](https://hyprland.org)<br>
 >  [hyprpm](https://github.com/hyprland-community/awesome-hyprland#plugins)<br>
->  [hycov](https://github.com/DreamMaoMao/hycov)<br>
+>  [hycov](https://github.com/Ayuei/hycov)<br>
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
