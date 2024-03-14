@@ -65,7 +65,7 @@ tooltip label {
     border-bottom: 3px solid white;
 }
 
-#clock, #idle_inhibitor, #network, #pulseaudio, #tray, #temperature{
+#clock, #idle_inhibitor, #network, #pulseaudio, #tray, #temperature, #battery, #backlight{
     background-color: @color1;
     padding: 2px 10px;
     margin-top: 5px;
@@ -74,11 +74,10 @@ tooltip label {
     color: @color7;
     border: 1.2px solid @color7;
 }
-#custom-div{
-    background-color: @color1;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    
+#backlight{
+    border-radius: 4px;
+    margin-right: 2px;
+    margin-left: 4px;
 }
 #clock {
     padding-left: 15px;
@@ -90,13 +89,17 @@ tooltip label {
 }
 
 #battery {
-    background-color: #ffffff;
+    background-color: @color7;
     color: black;
+    border: 1.2px solid @color7;
+    border-radius: 4px;
+    padding-top: 5px;
+    margin-left: 2px;
 }
 
 #battery.charging {
     color: white;
-    background-color: #26A65B;
+    background-color: @color1;
 }
 
 @keyframes blink {
