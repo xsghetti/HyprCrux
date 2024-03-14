@@ -1,13 +1,19 @@
-<h1 align="center">HyprCrux Dots</h1>
+<h1 align="center">HyprCrux Dots<br></h1>
+<h3 align ="center">Install Script Coming Soon...</h3>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
-
 <div align="center">
+
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/xsghetti/dotfiles?style=for-the-badge&logo=github&color=lightgreen)
 
 
 </div>
+
+>  [!Caution]
+>  This install script is meant for a minimal Arch Install.<br>
+>  If you aren't using the script - these are my personal dots and may not work for you.<br>
+>  My configs are messy as I'm not a dev, so use at your own risk.
 
 https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-effecf960f6e
 
@@ -17,19 +23,55 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
->  [!Caution]
->  These are my personal dots and may not work for you. my configs are messy as I'm not a dev, so use at your own risk.
->  ## Requires <br>
+> [!Important]
+> After Cloning the Repo - Run these commands separately.
+
+    cd ~/dotfiles/Scripts
+<br>
+
+    ./HyprCrux.sh
+<br>
+
+    ./install.sh
+
+
+>
+> When loading in for the first time, you will get
+an initial error from pywal. Feel free to load
+your own wallpapers into .config/wallpapers or 
+use one of mine with the wallpaper selector with 
+Super + W to select one. Logout & that error
+should disappear.
+
+
+> ## Depenencies <br>
 >  [hyprland](https://hyprland.org)<br>
->  [hyprpm](https://github.com/hyprland-community/awesome-hyprland#plugins)<br>
 >  [hycov](https://github.com/Ayuei/hycov)<br>
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 >  [pywal](https://github.com/dylanaraps/pywal) <br>
 >
-> ```Hyprpm requires: meson & cpio``` <br>
 > ```To get cava working with pywal - symlink template to cava/config```
+
+> Hycov Keybindings will be commented out by default
+to prevent the error message caused by HyprPM.<br>
+HyprTrails is also coded into hyprland.conf but will
+not trigger any errors. Feel free to enable them with
+the commands below.
+
+    hyprpm update
+    
+<br>
+    
+    hyprpm add https://github.com/hyprwm/hyprland-plugins
+<br>
+    
+    hyprpm enable hycov
+<br>
+    
+    hyprpm enable hyprtrails
+
 
 <table><tr><td>
 <code>D</code><br><code>E</code><br><code>T</code><br><code>A</code><br><code>I</code><br><code>L</code><br><code>S</code><br></td><td><table>
@@ -41,7 +83,4 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 </td></tr></table>
 
 
-> [!IMPORTANT]  
-> Other QoL packages <br>
 
-    sudo pacman -S hyprland discord kservice5 otf-font-awesome ttf-firacode-nerd ttf-arimo-nerd noto-fonts brightnessctl qt5ct qt6ct waybar sddm polkit-kde-agent pipewire pipewire-pulse pipewire-jack sof-firmware nwg-look
