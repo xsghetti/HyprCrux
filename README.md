@@ -24,7 +24,7 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
 > [!Important]
-> After Cloning the Repo - Run these commands separately.
+> After Cloning the Repo - Run these commands separately. There are some prompts during the install so pay attention!
 
     cd ~/dotfiles/Scripts
 <br>
