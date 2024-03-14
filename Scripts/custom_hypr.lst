@@ -25,18 +25,14 @@ qt5-graphicaleffects                                   # for sddm theme effects
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
-dunst                                                  # notification daemon
 rofi-lbonn-wayland-git                                 # application launcher
+swaync                                                 # notification center
 waybar                                                 # system bar
 swww                                                   # wallpaper
-swaylock-effects-git                                   # lock screen
 wlogout                                                # logout menu
 grimblast-git                                          # screenshot tool
-hyprpicker-git                                         # color picker
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
-cliphist                                               # clipboard manager
-
 
 # --------------------------------------------------- // Dependencies
 polkit-kde-agent                                       # authentication agent
@@ -49,7 +45,7 @@ imagemagick                                            # for image processing
 qt5-imageformats                                       # for dolphin image thumbnails
 ffmpegthumbs                                           # for dolphin video thumbnails
 kde-cli-tools                                          # for dolphin file type defaults
-
+kservice5
 
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
@@ -76,4 +72,3 @@ zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
 lsd|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt
 neofetch                                               # fetch tool
-
