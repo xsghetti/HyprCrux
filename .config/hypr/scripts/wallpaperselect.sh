@@ -1,12 +1,10 @@
  
 #!/bin/bash
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# This script for selecting wallpapers (SUPER W)
 
 scriptsDir="$HOME/.config/hypr/scripts"
 
 # WALLPAPERS PATH
-wallDIR="/home/crux/.config/wallpapers"
+wallDIR="$HOME/.config/wallpapers"
 
 # Transition config
 FPS=60
