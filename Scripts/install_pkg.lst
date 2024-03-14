@@ -65,7 +65,6 @@ firefox                                                # browser
 kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
-vim                                                    # terminal text editor
 visual-studio-code-bin                                 # ide text editor
 
 
@@ -74,7 +73,8 @@ eza|zsh                                                # file lister for zsh
 oh-my-zsh-git|zsh                                      # plugin manager for zsh
 zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
 neofetch                                               # fetch tool
-
-
+meson
+cpio
+cmake
 zsh
 linux-headers
