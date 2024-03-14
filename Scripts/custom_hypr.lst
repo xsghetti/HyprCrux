@@ -30,6 +30,7 @@ swaync                                                 # notification center
 waybar                                                 # system bar
 swww                                                   # wallpaper
 wlogout                                                # logout menu
+hyprlock                                               # lock screen             
 grimblast-git                                          # screenshot tool
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
