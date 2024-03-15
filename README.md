@@ -7,7 +7,7 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/xsghetti/dotfiles?style=for-the-badge&logo=github&color=lightgreen)
-![Static Badge](https://img.shields.io/badge/hypr-crux-orange?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/hypr-crux-lightblue?style=for-the-badge)
 
 
 
