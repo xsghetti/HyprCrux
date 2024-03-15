@@ -16,9 +16,6 @@
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
 
-https://github.com/xsghetti/dotfiles/assets/150515748/54886705-d963-45b8-9ce3-1b6d82cf5a98
-
-
 https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-effecf960f6e
 
 ![ss](https://github.com/xsghetti/dotfiles/assets/150515748/0a04d1d5-05ac-4f12-8544-d38917aa3135)
@@ -39,8 +36,7 @@ https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-ef
     ./install.sh
 
 
->
-> When loading in for the first time, you will get
+When loading in for the first time, you will get
 an initial error from pywal. Feel free to load
 your own wallpapers into .config/wallpapers or 
 use one of mine with the wallpaper selector with 
@@ -56,7 +52,9 @@ should disappear.
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 >  [pywal](https://github.com/dylanaraps/pywal) <br>
 >
-> ```To get cava working with pywal - symlink template to cava/config```
+
+>[!Important]
+>To get cava working with pywal - symlink template to cava/config
 
     ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
 
@@ -71,6 +69,9 @@ the commands below.
 <br>
     
     hyprpm add https://github.com/hyprwm/hyprland-plugins
+<br>
+    
+    hyprpm add https://github.com/Ayuei/hycov
 <br>
     
     hyprpm enable hycov
