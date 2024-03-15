@@ -1,4 +1,5 @@
-<h1 align="center">HyprCrux Dots<br></h1>
+<h1 align="center">HyprCrux Dots<br></h1> 
+<h4 align="center">Dynamically Colored by Pywal</h4>
 <h3 align ="center">Install Script Coming Soon...</h3>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
 <div align="center">
@@ -6,6 +7,8 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/xsghetti/dotfiles?style=for-the-badge&logo=github&color=lightgreen)
+![Static Badge](https://img.shields.io/badge/hypr-crux-orange?style=for-the-badge)
+
 
 
 </div>
@@ -15,13 +18,10 @@
 >  If you aren't using the script - these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
-
-https://github.com/xsghetti/dotfiles/assets/150515748/e37f75af-a02e-4daf-a652-effecf960f6e
-
-![ss](https://github.com/xsghetti/dotfiles/assets/150515748/0a04d1d5-05ac-4f12-8544-d38917aa3135)
-
-![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/64ca9d2f-571e-409a-97a4-f2fa9bdba498)
-
+![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
+![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
+![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
+![swaync](https://github.com/xsghetti/dotfiles/assets/150515748/d0a9d774-8686-43d1-9d8f-f7c5c88bb047)
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
 > [!Important]
