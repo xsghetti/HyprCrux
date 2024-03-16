@@ -13,8 +13,9 @@
 
 </div>
 
->  [!Caution]
->  This install script is meant for a minimal Arch Install.<br>
+>  [!Warning]
+>  This install script is meant for a ***minimal*** Arch Install.<br>
+>
 >  If you aren't using the script - these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
@@ -25,8 +26,17 @@
 ![cava](https://github.com/xsghetti/dotfiles/assets/150515748/f65aefcd-4597-4600-bbba-10bf1274cedc)
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
+## Depenencies <br>
+>  [hyprland](https://hyprland.org)<br>
+>  [hycov](https://github.com/Ayuei/hycov)<br>
+>  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
+>  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
+>  [pyprland](https://github.com/hyprland-community/pyprland) <br>
+>  [pywal](https://github.com/dylanaraps/pywal) <br>
+
 > [!Important]
 > After Cloning the Repo - Run these commands separately. There are some prompts during the install so pay attention!
+
 
     cd ~/dotfiles/Scripts
 <br>
@@ -36,8 +46,8 @@
 
     ./install.sh
 
-
-When loading in for the first time, you will get
+>[!Note]
+>When loading in for the first time, you will get
 an initial error from pywal. Feel free to load
 your own wallpapers into .config/wallpapers or 
 use one of mine with the wallpaper selector with 
@@ -45,20 +55,12 @@ Super + W to select one. Logout & that error
 should disappear.
 
 
-> ## Depenencies <br>
->  [hyprland](https://hyprland.org)<br>
->  [hycov](https://github.com/Ayuei/hycov)<br>
->  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
->  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
->  [pyprland](https://github.com/hyprland-community/pyprland) <br>
->  [pywal](https://github.com/dylanaraps/pywal) <br>
->
 
->[!Important]
+>[!Note]
 >To get cava working with pywal - symlink template to cava/config
 
     ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
-
+>[!Note]
 > Hycov Keybindings will be commented out by default
 to prevent the error message caused by HyprPM.<br>
 HyprTrails is also coded into hyprland.conf but will
