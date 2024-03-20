@@ -1,6 +1,5 @@
 <h1 align="center">HyprCrux Dots<br></h1> 
 <h4 align="center">Dynamically Colored by Pywal</h4>
-<h3 align ="center">Install Script Coming Soon...</h3>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
 <div align="center">
 
@@ -14,9 +13,7 @@
 </div>
 
 >  [!Warning]
->  This install script is meant for a ***minimal*** Arch Install.<br>
->
->  If you aren't using the script - these are my personal dots and may not work for you.<br>
+>  these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
@@ -33,28 +30,6 @@
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 >  [pywal](https://github.com/dylanaraps/pywal) <br>
-
-> [!Important]
-> After Cloning the Repo - Run these commands separately. There are some prompts during the install so pay attention!
-
-
-    cd ~/dotfiles/Scripts
-<br>
-
-    ./HyprCrux.sh
-<br>
-
-    ./install.sh
-
->[!Note]
->When loading in for the first time, you will get
-an initial error from pywal. Feel free to load
-your own wallpapers into .config/wallpapers or 
-use one of mine with the wallpaper selector with 
-Super + W to select one. Logout & that error
-should disappear.
-
-
 
 >[!Note]
 >To get cava working with pywal - symlink template to cava/config
