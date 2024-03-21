@@ -30,6 +30,7 @@
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 >  [pywal](https://github.com/dylanaraps/pywal) <br>
+>  [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 >[!Note]
 >To get cava working with pywal - symlink template to cava/config
