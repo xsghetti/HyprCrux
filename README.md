@@ -68,5 +68,7 @@ the commands below.
  </table>
 </td></tr></table>
 
-
+<div id="footer" align="center">
+    <img alt ="cat decoration" src="./src/footer_cat.svg">
+</div>
 
