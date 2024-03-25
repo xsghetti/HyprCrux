@@ -1,14 +1,13 @@
 <h1 align="center">HyprCrux<br></h1> 
 <h4 align="center">Dynamically Colored by Pywal</h4>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
+
+
 <div align="center">
-
-
+    
 ![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/xsghetti/dotfiles?style=for-the-badge&logo=github&color=lightgreen)
 ![Static Badge](https://img.shields.io/badge/hypr-crux-lightblue?style=for-the-badge)
-
-
 
 </div>
 
@@ -26,12 +25,14 @@
 
 ## Depenencies <br>
 >  [hyprland](https://hyprland.org)<br>
+>  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
+>  [pywal](https://github.com/dylanaraps/pywal) <br>
+>  [swaync](https://github.com/ErikReider/SwayNotificationCenter)<br>
+>  [rofi](https://github.com/davatorium/rofi)
+## Plugins <br>
 >  [hycov](https://github.com/Ayuei/hycov)<br>
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
->  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
->  [pywal](https://github.com/dylanaraps/pywal) <br>
->  [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 >[!Note]
 >To get cava working with pywal - symlink template to cava/config
