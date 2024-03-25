@@ -1,4 +1,4 @@
-<h1 align="center">HyprCrux Dots<br></h1> 
+<h1 align="center">HyprCrux<br></h1> 
 <h4 align="center">Dynamically Colored by Pywal</h4>
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png">
 <div align="center">
