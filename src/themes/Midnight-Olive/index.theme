@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Midnight-Olive
+Type=X-GNOME-Metatheme
+Comment= Midnight Gtk Themes 
+Encoding=UTF-8
+GtkTheme=Midnight-Olive
+IconTheme=Papirus-Dark
+CursorTheme=Adwaita
+CursorSize=24
