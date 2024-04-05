@@ -17,8 +17,8 @@
 >  these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
-![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
 ![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/84e4afba-247d-42bb-91de-fc124856ff57)
+![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
 ![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
 ![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
