@@ -18,11 +18,11 @@
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
 ![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
+![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/84e4afba-247d-42bb-91de-fc124856ff57)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
 ![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
 ![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
 ![swaync](https://github.com/xsghetti/dotfiles/assets/150515748/d0a9d774-8686-43d1-9d8f-f7c5c88bb047)
-![cava](https://github.com/xsghetti/dotfiles/assets/150515748/f65aefcd-4597-4600-bbba-10bf1274cedc)
 ![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
 
 ## Depenencies <br>
