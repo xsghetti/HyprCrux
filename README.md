@@ -20,10 +20,12 @@
 ![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/84e4afba-247d-42bb-91de-fc124856ff57)
 ![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
+![hyprexpo](https://github.com/xsghetti/HyprCrux/assets/150515748/b7434518-0ba2-4247-9422-946e2ba6a629)
+![hyprlock](https://github.com/xsghetti/HyprCrux/assets/150515748/0b539e20-bb9e-419b-9f38-640aa4626fc1)
 ![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
 ![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
 ![swaync](https://github.com/xsghetti/dotfiles/assets/150515748/d0a9d774-8686-43d1-9d8f-f7c5c88bb047)
-![hyprlock](https://github.com/xsghetti/dotfiles/assets/150515748/2eaffb84-d53e-42cb-ac62-0d00836d66fc)
+
 
 ## Depenencies <br>
 >  [hyprland](https://hyprland.org)<br>
@@ -36,16 +38,12 @@
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 
->[!Note]
->To get cava working with pywal - symlink template to cava/config
 
-    ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
+This configuration utilizes two official [Hyprland](https://hyprland.org) plugins. <br>
+To install these plugins run the following command.
+
 >[!Note]
-> Hycov Keybindings will be commented out by default
-to prevent the error message caused by HyprPM.<br>
-HyprTrails is also coded into hyprland.conf but will
-not trigger any errors. Feel free to enable them with
-the commands below.
+>HyprExpo is only available on hyprland-git until the next official release.
 
     hyprpm update
     
@@ -54,13 +52,16 @@ the commands below.
     hyprpm add https://github.com/hyprwm/hyprland-plugins
 <br>
     
-    hyprpm add https://github.com/Ayuei/hycov
-<br>
-    
-    hyprpm enable hycov
+    hyprpm enable hyprexpo
 <br>
     
     hyprpm enable hyprtrails
+<br>
+
+>[!Note]
+>To get cava working with pywal - symlink the template to cava/config
+
+    ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
 
 
 <table><tr><td>
