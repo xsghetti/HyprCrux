@@ -21,10 +21,10 @@
 ![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
 ![hyprexpo](https://github.com/xsghetti/HyprCrux/assets/150515748/b7434518-0ba2-4247-9422-946e2ba6a629)
-![hyprlock](https://github.com/xsghetti/HyprCrux/assets/150515748/0b539e20-bb9e-419b-9f38-640aa4626fc1)
 ![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
 ![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
 ![swaync](https://github.com/xsghetti/dotfiles/assets/150515748/d0a9d774-8686-43d1-9d8f-f7c5c88bb047)
+![hyprlock](https://github.com/xsghetti/HyprCrux/assets/150515748/0b539e20-bb9e-419b-9f38-640aa4626fc1)
 
 
 ## Depenencies <br>
