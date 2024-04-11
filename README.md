@@ -19,6 +19,7 @@
 
 ![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/84e4afba-247d-42bb-91de-fc124856ff57)
 ![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
+![agsoverview1](https://github.com/xsghetti/HyprCrux/assets/150515748/683b0dd4-7924-431e-b047-ddd52a77f9d4)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
 ![hyprexpo](https://github.com/xsghetti/HyprCrux/assets/150515748/b7434518-0ba2-4247-9422-946e2ba6a629)
 ![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
