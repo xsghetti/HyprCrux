@@ -1,0 +1,340 @@
+@import './notifications';
+
+@mixin calendar {
+  transition: 200ms;
+  border-radius: 18px;
+  color: $text;
+  background-color: $mantle;
+  border: 2px solid $blue;
+  padding: 8px 8px 0px;
+
+  calendar {
+    all: unset;
+
+    &.button {
+      all: unset;
+      transition: 200ms;
+      border-radius: 6px;
+      color: $text;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: none;
+
+      &:focus {
+        box-shadow: inset 0 0 0 2px #0e0e0e;
+        background-color: transparentize(#eeeeee, $amount: 0.8);
+        color: lighten($color: #eeeeee, $amount: 8%);
+      }
+
+      &:hover {
+        box-shadow: inset 0 0 0 2px $blue;
+        background-color: transparentize(#eeeeee, $amount: 0.8);
+        color: lighten($color: #eeeeee, $amount: 8%);
+      }
+
+      &:active,
+      &.on,
+      &.active,
+      &:checked {
+        box-shadow: inset 0 0 0 2px $blue;
+        background-image: linear-gradient(to right, $mantle, darken($mantle, 4%));
+        background-color: $blue;
+        color: $base;
+
+        &:hover {
+          box-shadow: inset 0 0 0 2px $blue,
+            inset 0 0 0 99px transparentize(#eeeeee, $amount: 0.8);
+        }
+      }
+
+      &:disabled {
+        box-shadow: none;
+        background-color: transparent;
+        color: transparentize($blue, 0.7);
+      }
+    }
+
+    &:selected {
+      box-shadow: inset 0 -8px 0 0 transparentize($green, 0.5),
+        inset 0 0 0 1px $green;
+      border-radius: 8px;
+      color: $blue;
+    }
+
+    &.header {
+      background-color: transparent;
+      border: none;
+      color: transparentize($text, 0.5);
+    }
+
+    &.highlight {
+      background-color: transparent;
+      color: transparentize($blue, 0.0);
+    }
+
+    &:indeterminate {
+      color: transparentize($text, 0.8);
+    }
+
+    font-size: 1.4em;
+    padding: .2em;
+  }
+}
+
+window#datemenu .datemenu {
+  box-shadow: 0 0 5px 0 #0e0e0e;
+
+  margin: 9px;
+  border: 2px solid $blue;
+  background-color: $base;
+  color: $text;
+  border-radius: 26px;
+  padding: 8px;
+
+  .notifications {
+    .header {
+      margin-bottom: 30px;
+      margin-right: 30px;
+
+      >label {
+        margin-left: 15px;
+      }
+
+      button {
+        all: unset;
+        transition: 200ms;
+        border-radius: 10px;
+        color: $text;
+
+        background-color: #FFFFFF;
+        box-shadow: inset 0 0 0 2px $blue;
+
+        &:focus {
+          box-shadow: inset 0 0 0 2px #0e0e0e;
+          background-color: transparentize(#eeeeee, $amount: 0.8);
+          color: lighten($color: #eeeeee, $amount: 8%);
+        }
+
+        &:hover {
+          box-shadow: inset 0 0 0 2px $blue;
+          background-color: transparentize(#eeeeee, $amount: 0.8);
+          color: lighten($color: #eeeeee, $amount: 8%);
+        }
+
+        &:active,
+        &.on,
+        &.active,
+        &:checked {
+          box-shadow: inset 0 0 0 2px $blue;
+          background-image: linear-gradient(to right, $mantle, darken($mantle, 4%));
+          background-color: $blue;
+          color: $base;
+
+          &:hover {
+            box-shadow: inset 0 0 0 2px $blue,
+              inset 0 0 0 99px transparentize(#eeeeee, $amount: 0.8);
+          }
+        }
+
+        &:disabled {
+          box-shadow: none;
+          background-color: transparent;
+          color: transparentize($mantle, 0.7);
+        }
+
+        padding: 10px;
+      }
+    }
+
+    .notification-scrollable {
+
+      scrollbar,
+      scrollbar * {
+        all: unset;
+      }
+
+      scrollbar.vertical {
+        transition: 200ms;
+        background-color: transparentize($base, 0.7);
+
+        &:hover {
+          background-color: transparentize($base, 0.3);
+
+          slider {
+            background-color: transparentize($text, 0.3);
+            min-width: .6em;
+          }
+        }
+      }
+
+
+      scrollbar.vertical slider {
+        background-color: transparentize($text, 0.5);
+        border-radius: 10px;
+        min-width: .4em;
+        min-height: 2em;
+        transition: 200ms;
+      }
+    }
+
+    .notification-list {
+      margin-right: 10px;
+    }
+
+    .notification {
+      &.critical {
+        box-shadow: inset 0 0 .5em 0 $red;
+      }
+
+      &:hover button.close-button {
+        // @include button-hover;
+        background-color: transparentize($red, .5);
+      }
+
+      .content {
+        .title {
+          margin-top: 5px;
+          margin-right: 10px;
+          color: $text;
+          font-size: 1.2em;
+        }
+
+        .time {
+          color: transparentize($text, .2);
+          margin: 5px 10px;
+        }
+
+        .description {
+          font-size: .9em;
+          color: transparentize($text, .2);
+        }
+
+        .icon {
+          border-radius: 10px;
+          margin-right: 10px;
+
+          &.img {
+            border: 2px solid $green;
+          }
+        }
+      }
+
+      box.actions {
+        // @include spacing(0.5);
+        margin-top: 10px;
+
+        button {
+          // @include button;
+          background-color: $surface0;
+          border: 2px solid $surface0;
+          border-radius: 10px;
+          font-size: 1.2em;
+          margin: 0px 10px 10px 0px;
+          padding: 10px;
+
+          &:first-child {
+            margin: 0px 10px 10px 10px;
+          }
+
+          &:hover {
+            background-color: $surface2;
+            border: 2px solid $rosewater;
+          }
+        }
+      }
+
+      button.close-button {
+        // @include button($flat: true);
+        margin: 0px 0px 0px 0px;
+        border-radius: 10px;
+        min-width: 30px;
+        min-height: 30px;
+        background-color: rgba(0, 0, 0, 0); //$crust;
+        padding: 0px;
+
+        &:hover {
+          background-color: transparentize($red, .2);
+        }
+
+        &:active {
+          background-image: none;
+          background-color: $red;
+        }
+      }
+
+      transition: 200ms;
+      color: $text;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      background-color: $base;
+      font-family: "Iosevka";
+      padding: 5px;
+      border: 2px solid $rosewater;
+      box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+    }
+
+    .placeholder {
+      image {
+        font-size: 7em;
+      }
+
+      label {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+
+  separator {
+    background-color: $mantle;
+    min-width: 3px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+
+  .datemenu {
+    &.horizontal>* {
+      margin: 0 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &.vertical>* {
+      margin: 10px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .clock-box {
+    padding: 10px;
+
+    .clock {
+      font-size: 6em;
+    }
+
+    .uptime {
+      font-family: "Iosevka";
+      font-size: 18px;
+      color: transparentize($text, 0.2);
+    }
+  }
+
+  .calendar {
+    font-family: "Iosevka";
+    font-size: 18px;
+    @include calendar;
+  }
+}

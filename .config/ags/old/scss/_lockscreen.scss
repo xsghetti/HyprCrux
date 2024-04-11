@@ -1,0 +1,76 @@
+#lockscreen * {
+  // all:unset;
+  font-family: "SF Pro Display";
+}
+
+/* #lockscreen { */
+/*   background-image: url("/home/hooman/gitjargan/wallpapers/0012.jpg"); */
+/* } */
+
+#lockscreen-time {
+  color: #b8bcc2;
+  font-size: 12.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#lockscreen-date {
+  color: #b8bcc2;
+  font-size: 3.75rem;
+  margin-bottom: 6rem;
+}
+
+#lockscreen-time, #lockscreen-date {
+  margin-left: 7.8125rem;
+}
+
+.lockscreen-smolbox {
+  background-color: #172030;
+  border-radius: 0.5rem;
+  min-height: 4.375rem;
+  min-width: 4.375rem;
+  margin-right: 5rem;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+
+  label {
+    min-height: 4.375rem;
+    min-width: 4.375rem;
+    color: #b8bcc2;
+  }
+
+  &:last-child {
+    margin-bottom: 5rem;
+  }
+}
+
+#lockscreen-revealer {
+  padding-left: 1rem;
+}
+
+.lockscreen-charged {
+  color: #6b7cdb;
+}
+
+.lockscreen-low {
+  color: #c45e62;
+}
+
+.lockscreen-charging {
+  color: #62bf81;
+}
+.lockscreen-battery {
+  padding-right: 0;
+  margin-left: -0.5625rem;
+  margin-bottom: -0.4375rem;
+  margin-right: 0.5625rem;
+  padding-top: 0;
+}
+
+.lockscreen-network {
+  padding-left: 1.25rem;
+  margin-right: 1.125rem;
+}
+
+#lockscreen-boxRight {
+  min-width: 4.375rem;
+}

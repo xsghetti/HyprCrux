@@ -209,6 +209,13 @@ margin-bottom: 3px;
 
 
 }
+#custom-chatgpt {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 10px;
+  }
     
 
 

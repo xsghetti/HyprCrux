@@ -1,0 +1,160 @@
+#powermenu {
+  /* opacity: 0; */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+window#powermenu,
+window#verification {
+  // the fraction has to be more than hyprland ignorealpha
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#powermenu-motherbox,
+.verification {
+  background-color: $crust;
+  // margin: 162px 288px;
+  border-radius: 25px;
+  opacity: 1;
+  // box-shadow: rgba(0,0,0,0.4)
+  // 10px 10px;
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 10px 20px;
+  border: 2px solid $overlay0;
+}
+
+.verification {
+  min-height: 158px;
+  min-width: 358px;
+}
+
+
+.powermenu-powerbutton {
+  background-color: $red;
+  color: #212228;
+  border-radius: 200px;
+  min-height: 48px;
+  min-width: 48px;
+  font-size: 20px;
+  font-family: "Iosevka";
+
+  &:hover {
+    background-color: $green;
+    font-size: 100px;
+  }
+
+  label {
+    padding-left: 15px;
+    padding-top: 0px;
+  }
+}
+
+.powermenu-username {
+  background-color: $green;
+  color: #212228;
+  border-radius: 200px;
+  min-height: 48px;
+  font-size: 20px;
+  font-family: "Iosevka";
+
+  label {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.powermenu-powerbutton,
+.powermenu-username {
+  margin: 10px 0px 0px 10px;
+}
+
+
+.powermenu-midbox {
+  background-color: $base;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 15px 25px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: "Iosevka";
+}
+
+.verification-label {
+  background-color: $base;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 25px 25px;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-family: "Iosevka";
+}
+
+#powermenu-topbox {
+  margin: 25px 25px 0px 25px;
+  min-height: 388px;
+  border-radius: 10px;
+}
+
+.powermenu-buttonLabel {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+.powermenu-buttonBox {
+  background-color: $base;
+  padding: 0px;
+  color: #EEEEEF;
+  min-height: 242px;
+  min-width: 242px;
+  border-radius: 10px;
+  margin: 0px 0px 25px 0px;
+  font-size: 100px;
+  border: 2px solid rgba(0, 0, 0, 0);
+
+  label {
+    margin-left: 85px;
+  }
+
+  &:focus {
+    background-color: $blue;
+    color: #1E2127;
+  }
+
+  &:hover {
+    border: 2px solid $lavender;
+    background-color: $surface0;
+  }
+}
+
+
+.verification-buttonBox {
+  background-color: $base;
+  padding: 0px;
+  color: #EEEEEF;
+  min-height: 60px;
+  min-width: 140px;
+  border-radius: 10px;
+  margin: 0px 0px 25px 0px;
+  font-size: 35px;
+  font-family: "Iosevka";
+  border: 2px solid rgba(0, 0, 0, 0);
+
+
+  &:focus {
+    background-color: $blue;
+    color: #1E2127;
+  }
+
+  &:hover {
+    border: 2px solid $lavender;
+    background-color: $surface0;
+  }
+}
+
+.powermenu-buttonBoxFirst,
+.verification-buttonBoxFirst {
+  margin-left: 25px;
+}
+
+.powermenu-buttonBoxLast,
+.verification-buttonBoxLast {
+  margin-right: 25px;
+}
