@@ -33,9 +33,10 @@
 >  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
 >  [pywal](https://github.com/dylanaraps/pywal) <br>
 >  [swaync](https://github.com/ErikReider/SwayNotificationCenter)<br>
->  [rofi](https://github.com/davatorium/rofi)
+>  [rofi](https://github.com/davatorium/rofi)<br>
+>  [ags](https://github.com/Aylur/ags)<br>
 ## Plugins <br>
->  [hycov](https://github.com/Ayuei/hycov)<br>
+>  [hyprexpo](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo)<br>
 >  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 
