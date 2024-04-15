@@ -1,0 +1,221 @@
+ 
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'FiraCode Nerd Font';
+    font-size: 13px;
+    min-height: 0;
+}
+@import '../../.cache/wal/colors-waybar.css';
+window#waybar {
+    background: transparent;
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+    color: @color6;
+}
+
+
+tooltip {
+  background: @color1;
+  border: 1px solid @color7;
+  color: @color7
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces{
+    background-color: @color1;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding-right: 5px;
+    border: 1.2px solid @color7;
+}
+#workspaces button {
+    padding: 5px 5px;
+    background: transparent;
+    color: @color7;
+    border-bottom: 3px solid transparent;
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 4px;
+    
+    
+}
+
+#workspaces button.focused {
+    /* background: #64727D; */
+    /* border-bottom: 3px solid white; */
+}
+
+#workspaces button:hover{
+    border-radius: 6px;
+    /* background-color: rgba(114, 101, 138, 0.8); */
+    box-shadow: inset 2px 2px 2px @color7;
+
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    /* background: #64727D; */
+    border-bottom: 3px solid white;
+}
+
+#clock, #idle_inhibitor, #network, #pulseaudio, #tray, #temperature, #battery, #backlight{
+    background-color: @color1;
+    padding: 2px 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    color: @color7;
+    border: 1.2px solid @color7;
+}
+#backlight{
+    border-radius: 4px;
+    margin-right: 2px;
+    margin-left: 4px;
+}
+#clock {
+    padding-left: 15px;
+    padding-right: 0;
+    margin-right: 5px;
+}
+#idle_inhibitor{
+   background-color: rgba(0, 255, 255, 0.3);
+}
+
+#battery {
+    background-color: @color7;
+    color: black;
+    border: 1.2px solid @color7;
+    border-radius: 4px;
+    padding-top: 5px;
+    margin-left: 2px;
+}
+
+#battery.charging {
+    color: white;
+    background-color: @color1;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#custom-menu{
+    padding-left: 8px;
+    padding-right: 11px;
+    background-color: @color1;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    color: @color7;
+    border: 1.2px solid @color7;
+
+}
+
+
+#tray{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    margin-right: 2px
+}
+
+#clock{
+    border-radius:0px 4px 4px 0px;
+    padding-right: 10px;
+}
+#custom-updates{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: @color7;
+    background-color: @color1;
+    border: 1.2px solid @color7;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+}
+
+#pulseaudio.muted{
+    color: rgb(189, 5, 5);
+    font-weight: bold;
+
+}
+
+#custom-power{
+    margin-right: 5px;
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    padding-right: 2px;
+    background-color: @color1;
+    color: @color7;
+    border: 1.2px solid @color7;
+}
+#network{
+    border-radius: 4px 0px 0px 4px;
+}
+
+#custom-playerctl,
+#custom-playerlabel{
+
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: @color1;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    margin-left: 5px;
+    border: 1.2px solid @color7;
+    color: @color7;
+}
+
+#custom-name{
+border: solid 2px;
+border-color: rgba(156, 120, 223, 1);
+border-radius: 2pc 0px 2pc 0px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+#wlr-taskbar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(114, 101, 138, 0.5);
+
+
+}
+#custom-chatgpt {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 10px;
+  }
+    
+
+

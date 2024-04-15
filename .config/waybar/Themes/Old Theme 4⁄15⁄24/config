@@ -1,38 +1,71 @@
-
 {
-   
     "layer": "top", // Waybar at top layer
-    // "output": "DP-1",
+    // "output": ["eDP-1"],
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    // "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
-    "margin-top": 5,
-    "margin-left": 10,
-    "margin-right": 10,
-    
-    "modules-left": ["custom/menu", "hyprland/workspaces"],
+    // Choose the order of the modules
+    "modules-left": ["custom/menu", "hyprland/workspaces",  "custom/updates"],
     "modules-center": ["custom/playerctl", "custom/playerlabel"],
-    "modules-right": ["group/widgets", "network", "pulseaudio", "clock", "battery", "backlight", "tray", "custom/power"],
+    "modules-right": ["custom/swaync", "custom/chatgpt", "network", "pulseaudio", "clock", "tray", "battery", "backlight", "custom/power"],
 
-
-    // Modules
-    "group/widgets": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 500,
-            "children-class": "not-power",
-            "transition-left-to-right": false,
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
         },
-        "modules": ["custom/swaync", "custom/chatgpt", "custom/updates", "network" ]
-      },
-
-
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "󰥔"
+        
+    },
+    
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
-        "format": "<span foreground='#ffffff'> </span>{:%H:%M}",
+        "format": "<span foreground='#C6AAE8'>   </span>{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
       },
     "cpu": {
@@ -211,12 +244,17 @@
 "custom/chatgpt": {
     "format": "󰢚",
     "on-click": "firefox https://chatgpt.com",
-    "tooltip-format": "ChatGPT"
+    "tooltip": false
 },    
 
 
+
+
+
+
+
 },
+    
 
 
-
-
+    
