@@ -12,7 +12,7 @@
     
     "modules-left": ["custom/menu", "hyprland/workspaces"],
     "modules-center": ["custom/playerctl", "custom/playerlabel"],
-    "modules-right": ["group/widgets", "network", "pulseaudio", "clock", "battery", "backlight", "tray", "custom/power"],
+    "modules-right": ["group/widgets", "pulseaudio", "clock", "battery", "backlight", "tray", "custom/power"],
 
 
     // Modules
