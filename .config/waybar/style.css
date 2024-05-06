@@ -34,7 +34,9 @@ tooltip {
     padding-right: 5px;
 }
 
-#custom-menu{
+#custom-menu,
+#battery,
+#backlight{
     margin-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -45,6 +47,14 @@ tooltip {
     border-radius: 0px;
 
 }
+
+/* #battery{
+    background-color: @color1;
+    border: 1px solid @color7;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin
+} */
 
 #custom-power{
     background-color: @color1;
