@@ -17,7 +17,8 @@
 >  these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
-![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/84e4afba-247d-42bb-91de-fc124856ff57)
+
+![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/8a8849b3-8d3c-4548-bd38-927bd041f31a)
 ![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
 ![agsoverview1](https://github.com/xsghetti/HyprCrux/assets/150515748/683b0dd4-7924-431e-b047-ddd52a77f9d4)
 ![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
