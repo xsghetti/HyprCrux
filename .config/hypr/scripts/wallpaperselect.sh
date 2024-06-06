@@ -98,4 +98,4 @@ waybar &
 
 ~/.config/hypr/scripts/refresh.sh
 
-discord-pywal
+pywal-discord
