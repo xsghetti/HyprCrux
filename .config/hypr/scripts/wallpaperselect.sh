@@ -97,3 +97,5 @@ sleep 1
 waybar &
 
 ~/.config/hypr/scripts/refresh.sh
+
+discord-pywal
