@@ -9,7 +9,8 @@
     "margin-top": 10,
     "margin-left": 10,
     "margin-right": 10,
-    
+    "border-radius": 5,
+
     "modules-left": ["custom/menu", "hyprland/workspaces"],
     "modules-center": ["custom/playerctl", "custom/playerlabel"],
     "modules-right": ["group/widgets", "pulseaudio", "clock", "battery", "backlight", "tray", "custom/power"],
@@ -32,7 +33,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "<span foreground='#ffffff'> </span>{:%H:%M}",
+        "format": "<span foreground='#ffffff'> </span>{:%H:%M %D}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
       },
     "cpu": {
@@ -209,9 +210,10 @@
     "escape": true
 },
 "custom/chatgpt": {
-    "format": "󰢚",
-    "on-click": "firefox https://chatgpt.com",
-    "tooltip-format": "ChatGPT"
+    "format": " ",
+    "on-click": "chromium --app=https://chat.openai.com",
+    "tooltip-format": "Open ChatGPT"
+
 },    
 
 
