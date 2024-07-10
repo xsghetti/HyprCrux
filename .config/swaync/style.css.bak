@@ -9,7 +9,7 @@
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
   opacity: 1;
-  background: alpha(@color0, 0.5);
+  background: @color0;
 }
 
 .notification-row {
