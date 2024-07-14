@@ -45,8 +45,6 @@
 This configuration utilizes two official [Hyprland](https://hyprland.org) plugins. <br>
 To install these plugins run the following command.
 
->[!Note]
->HyprExpo is only available on hyprland-git until the next official release.
 
     hyprpm update
     
