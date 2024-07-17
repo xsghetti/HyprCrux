@@ -61,7 +61,8 @@ tooltip {
 #pulseaudio,
 #clock,
 #custom-swaync,
-#custom-updates{
+#custom-updates,
+#backlight{
     margin-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -71,6 +72,18 @@ tooltip {
     border: 1px solid @color7;
     
 }
+
+#battery{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 11px;
+    background-color: @color1;
+    border: 1px solid @color7;
+    
+}
+
 
 #custom-chatgpt{
     margin-left: 5px;
