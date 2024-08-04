@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=Midnight-Solarized
-Type=X-GNOME-Metatheme
-Comment= Gtk Dark Themes  
-Encoding=UTF-8
-GtkTheme=Midnight-Solarized
-IconTheme=Papirus-Dark
-CursorTheme=Adwaita
-CursorSize=24
