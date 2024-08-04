@@ -114,7 +114,8 @@ alias gpull="git pull"
 alias gc="git commit -m"
 alias gclone="git clone"
 alias nogaps="hyprctl keyword general:gaps_in 0 && hyprctl keyword general:gaps_out 0"
-alias pacman="sudo pacman -S"
+alias pls="sudo "
+alias install="sudo pacman -S "
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
