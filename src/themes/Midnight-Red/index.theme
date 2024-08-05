@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Midnight-Red
+Type=X-GNOME-Metatheme
+Comment= Midnight Gtk Themes 
+Encoding=UTF-8
+GtkTheme=Midnight-Red
+IconTheme=Papirus-Dark-Red
+CursorTheme=Adwaita
+CursorSize=24

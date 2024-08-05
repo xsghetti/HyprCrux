@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=Midnight-NightGray
+Type=X-GNOME-Metatheme
+Comment= Midnight Gtk Themes 
+Encoding=UTF-8
+GtkTheme=Midnight-NightGray
+IconTheme=Papirus-Dark-Gray
+CursorTheme=Adwaita
+CursorSize=24
