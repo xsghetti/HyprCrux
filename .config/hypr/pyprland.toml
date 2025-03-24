@@ -8,3 +8,6 @@ class = "kitty-dropterm"
 size = "60% 30%"
 max_size = "1920px 40%"
 margin = 60
+
+
+

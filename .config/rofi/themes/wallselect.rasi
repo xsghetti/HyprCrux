@@ -6,15 +6,15 @@ configuration {
     drun-display-format:         "{name}";
 }
 
-@theme "$HOME/.cache/wal/colors-rofi-dark.rasi"
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
 
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10.1";
-    background:                  #11111b;
-    foreground:                  #eeeeee;
-    selected:                    #eba0ac;
-    active:                      #BD93F9;
+    background:                  @selected-active-background;
+    foreground:                  @active-foreground;
+    selected:                    @selected-urgent-background;
+    active:                      @selected-urgent-background;
     urgent:                      #f38ba8;
 }
 
@@ -68,7 +68,7 @@ element {
     border-radius:               20px;
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @inherit;
 }
 
 @media(max-aspect-ratio: 1.8) {
