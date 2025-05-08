@@ -24,7 +24,7 @@
             "children-class": "not-power",
             "transition-left-to-right": false,
         },
-        "modules": ["custom/swaync", "custom/chatgpt", "custom/updates", "network" ]
+        "modules": ["custom/swaync", "custom/updates", "network" ]
       },
 
 
