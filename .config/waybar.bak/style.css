@@ -1,0 +1,142 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 13px;
+
+}
+@import '../../.cache/wal/colors-waybar.css';
+
+window#waybar {
+    background-color: alpha(@background, 0.8);
+    border: 1.5px solid @color1;
+    color: @color7;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-radius: 0px;
+}
+tooltip {
+    background: @color1;
+    border: 1px solid @color7;
+    color: @color7
+  }
+  tooltip label {
+    color: white;
+  }
+
+
+#network,
+#custom-updates,
+#custom-swaync,
+#custom-chatgpt,
+#clock,
+#pulseaudio,
+#custom-playerctl{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#custom-menu{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 10px;
+    background-color: @color1;
+    border: 1px solid @color7;
+    border-radius: 0px;
+
+}
+
+#custom-power{
+    background-color: @color1;
+    border: 1px solid @color7;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 3px;
+}
+#tray,
+#network,
+#pulseaudio,
+#clock,
+#custom-swaync,
+#custom-updates,
+#backlight{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: @color1;
+    border: 1px solid @color7;
+    
+}
+
+#battery{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 11px;
+    background-color: @color1;
+    border: 1px solid @color7;
+    
+}
+
+
+#custom-chatgpt{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 11px;
+    background-image: url("/home/crux/.config/waybar/openai-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+
+#workspaces{
+    margin-left: 5px;
+    border: 1px solid @color7;
+    background-color: @color1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*  */
+}
+
+#workspaces button {
+    color: @color7;
+}
+#workspaces button:hover{
+    border-color: @color7;
+    border-radius: 0px;
+}
+
+#custom-playerlabel{
+    background-color: @color1;
+    border: 1px solid @color7;
+    color: @color7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border-radius: 0pc 5pc 0pc 5pc; */
+    
+}
+#custom-playerctl{
+    
+}
+
+
+
+
+
+
+
+

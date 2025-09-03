@@ -1,0 +1,262 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono Nerd Font, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+/*
+ ▄▄▄▄    ▄▄▄       ██▀███  
+▓█████▄ ▒████▄    ▓██ ▒ ██▒
+▒██▒ ▄██▒██  ▀█▄  ▓██ ░▄█ ▒
+▒██░█▀  ░██▄▄▄▄██ ▒██▀▀█▄  
+░▓█  ▀█▓ ▓█   ▓██▒░██▓ ▒██▒
+░▒▓███▀▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░
+▒░▒   ░   ▒   ▒▒ ░  ░▒ ░ ▒░
+ ░    ░   ░   ▒     ░░   ░ 
+ ░            ░  ░   ░     
+      ░                    
+*/
+window#waybar {
+    background: transparent;
+    color: #f4d9e1
+}
+
+
+/*▄▄▄▄    █    ██ ▄▄▄█████▓▄▄▄█████▓ ▒█████   ███▄    █   ██████ 
+▓█████▄  ██  ▓██▒▓  ██▒ ▓▒▓  ██▒ ▓▒▒██▒  ██▒ ██ ▀█   █ ▒██    ▒ 
+▒██▒ ▄██▓██  ▒██░▒ ▓██░ ▒░▒ ▓██░ ▒░▒██░  ██▒▓██  ▀█ ██▒░ ▓██▄   
+▒██░█▀  ▓▓█  ░██░░ ▓██▓ ░ ░ ▓██▓ ░ ▒██   ██░▓██▒  ▐▌██▒  ▒   ██▒
+░▓█  ▀█▓▒▒█████▓   ▒██▒ ░   ▒██▒ ░ ░ ████▓▒░▒██░   ▓██░▒██████▒▒
+░▒▓███▀▒░▒▓▒ ▒ ▒   ▒ ░░     ▒ ░░   ░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ▒ ▒▓▒ ▒ ░
+▒░▒   ░ ░░▒░ ░ ░     ░        ░      ░ ▒ ▒░ ░ ░░   ░ ▒░░ ░▒  ░ ░
+ ░    ░  ░░░ ░ ░   ░        ░      ░ ░ ░ ▒     ░   ░ ░ ░  ░  ░  
+ ░         ░                           ░ ░           ░       ░  
+      ░
+*/                                                               
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #e5809e;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #e5809e;
+}P
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+/*
+███▄ ▄███▓ ▒█████  ▓█████▄  █    ██  ██▓    ▓█████   ██████ 
+▓██▒▀█▀ ██▒▒██▒  ██▒▒██▀ ██▌ ██  ▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
+▓██    ▓██░▒██░  ██▒░██   █▌▓██  ▒██░▒██░    ▒███   ░ ▓██▄   
+▒██    ▒██ ▒██   ██░░▓█▄   ▌▓▓█  ░██░▒██░    ▒▓█  ▄   ▒   ██▒
+▒██▒   ░██▒░ ████▓▒░░▒████▓ ▒▒█████▓ ░██████▒░▒████▒▒██████▒▒
+░ ▒░   ░  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░▒▓▒ ▒ ▒ ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+░  ░      ░  ░ ▒ ▒░  ░ ▒  ▒ ░░▒░ ░ ░ ░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
+░      ░   ░ ░ ░ ▒   ░ ░  ░  ░░░ ░ ░   ░ ░      ░   ░  ░  ░  
+       ░       ░ ░     ░       ░         ░  ░   ░  ░      ░  
+                     ░                                       
+*/
+
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#mode,
+#scratchpad,
+#network, #pulseaudio, #temperature, #custom-spotify, #workspaces, #tray {
+    color: #e5809e;
+    border-radius: 8px;
+    margin: 5px 4px;
+    padding: 2px 2px;
+    margin-right: 6px;
+    background-color: #28243b;
+}
+
+#window {
+	background-color: #1e1e2e;
+	padding: 0 10px;
+	border-radius: 4px;
+}
+
+#workspaces { /*changes color of box around workspaces*/
+    background-color: #28243b
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #temperature {
+    /* margin-left: 21; */
+}
+
+.modules-left- > widget:first-child > #workspaces button.active {
+	margin-left: 3;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 3;
+}
+
+#custom-menu {    
+    color: #e5809e;
+    background-color: #28243b;
+    border-radius: 0px 0px 24px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0 20px 0 13px;
+    /*border-right: solid 1px #282738;*/
+    font-size: 20px;
+
+}
+#custom-updates {
+    color: #e5809e;
+    /*background-color: #28243b;
+    border-radius: 24px;
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    */
+}
+#custom-power {
+    color: #e5809e;
+    background-color: #28243b;
+    padding: 0px 5px 0px 5px;
+    margin-left: 5px;
+    border-radius: 24px 0px 0px 0px;
+    
+  
+}
+
+#pulseaudio {
+  color: #e5809e;
+  margin-right: 12px;
+}
+
+#idle_inhibitor {
+    color: #e5809e;
+    border-width: 10px;
+    border-radius: 0px 0px 0px 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #28243b;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#clock, #mpd {
+  color: #e5809e;
+  background-color: #28243b;
+  border-radius: 0px 0px 0px 0px;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-right: 0px;
+  margin-left: -8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  /*border-left: solid 1px #282738;*/
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#custom-divider {
+  color: #FFFFFF;
+  margin-left: 16px;
+} 
+
+#custom-separator2 {
+  color: #FFFFFF;
+}
+
+#custom-weather {
+  color: #a6e3a1;
+}
+
+#cpu {
+    background-color: #2ecc71;
+    color: #000000;
+}
+
+#memory {
+    background-color: #9b59b6;
+}
+
+#disk {
+    background-color: #964B00;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+
+#network.disconnected {
+    background-color: #fcfafa;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}
+ #custom.name {
+    text-shadow: 5px 5px #000000;
+    
+ }
+
+ 

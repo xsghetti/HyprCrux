@@ -1,85 +1,101 @@
+  
 #!/bin/bash
 
-# Directory containing wallpapers
-#!/bin/bash
+scriptsDir="$HOME/.config/hypr/scripts"
 
-WALLPAPER_DIR="$HOME/.config/wallpapers"
-HYPERPAPER_CONFIG="$HOME/.config/hypr/hyprpaper.conf"
+# WALLPAPERS PATH
+wallDIR="$HOME/.config/wallpapers"
 
-# Check if the directory exists
-if [ ! -d "$WALLPAPER_DIR" ]; then
-    echo "Wallpaper directory not found!"
-    exit 1
+# Transition config
+FPS=60
+TYPE="wipe"
+DURATION=2
+BEZIER=".43,1.19,1,.4"
+SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
+
+# Check if swaybg is running
+if pidof swaybg > /dev/null; then
+  pkill swaybg
 fi
 
-# Ensure Hyprpaper is running
-if ! pgrep -x "hyprpaper" > /dev/null; then
-    hyprpaper &
-    sleep 0.5  # Give it some time to start
-fi
+# Retrieve image files
+PICS=($(ls "${wallDIR}" | grep -E ".jpg$|.jpeg$|.png$|.gif$"))
+RANDOM_PIC="${PICS[$((RANDOM % ${#PICS[@]}))]}"
+RANDOM_PIC_NAME="${#PICS[@]}. random"
 
-# Function to format wallpapers for Rofi with previews
+# Rofi command
+rofi_command="rofi -show -dmenu -theme $HOME/.config/rofi/themes/wallpaper-select.rasi"
+
 menu() {
-    find "$WALLPAPER_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" \) | while read -r img; do
-        printf "$(basename "$img")\x00icon\x1f$img\n"
-    done
+  for i in "${!PICS[@]}"; do
+    # Displaying .gif to indicate animated images
+    if [[ -z $(echo "${PICS[$i]}" | grep .gif$) ]]; then
+      printf "$(echo "${PICS[$i]}" | cut -d. -f1)\x00icon\x1f${wallDIR}/${PICS[$i]}\n"
+    else
+      printf "${PICS[$i]}\n"
+    fi
+  done
+
+  printf "$RANDOM_PIC_NAME\n"
 }
 
-# Show Rofi menu with image previews
-WALLPAPER=$(menu | rofi -dmenu -theme $HOME/.config/rofi/wallselect.rasi)
+swww query || swww init
 
-# Check if the user pressed Escape (Rofi returns 1 when Escape is pressed)
-if [ $? -eq 1 ]; then
-    echo "No wallpaper selected, exiting..."
+main() {
+  choice=$(menu | ${rofi_command})
+
+  # No choice case
+  if [[ -z $choice ]]; then
     exit 0
-fi
+  fi
 
-# If user selected a wallpaper, preload and set it using Hyprpaper
-if [ -n "$WALLPAPER" ]; then
-    FULL_PATH="$WALLPAPER_DIR/$WALLPAPER"
+  # Random choice case
+  if [ "$choice" = "$RANDOM_PIC_NAME" ]; then
+    swww img "${wallDIR}/${RANDOM_PIC}" $SWWW_PARAMS
+    exit 0
+  fi
 
-    # Check if the wallpaper file exists before applying it
-    if [ -f "$FULL_PATH" ]; then
-        # Preload the wallpaper
-        hyprctl hyprpaper preload "$FULL_PATH"
-        sleep 0.2  # Short delay to ensure it's loaded
-        
-        # Set the wallpaper using hyprpaper
-        hyprctl hyprpaper wallpaper ", $FULL_PATH"
-
-        # Update Hyprpaper config file to persist wallpaper after reboot
-        echo "preload = $FULL_PATH" > "$HYPERPAPER_CONFIG"
-        echo "wallpaper = , $FULL_PATH" >> "$HYPERPAPER_CONFIG"
-
-        # Restart Hyprpaper to apply changes
-        pkill hyprpaper
-        hyprpaper &
-        
-        # Create symlink to the selected wallpaper for Rofi access
-        ln -sf "$FULL_PATH" "$HOME/.config/rofi/.current_wallpaper"
-        
-        # Wait a moment to ensure the wallpaper is fully loaded before applying pywal
-        sleep 1
-        
-        # Use pywal to generate color scheme from the current wallpaper
-        wal -i "$FULL_PATH" --cols16
-        sleep 1  # Wait a moment for pywal to finish executing
-        
-        # Run pywal-discord to update Discord (if applicable)
-        pywal-discord
-    else
-        echo "Selected wallpaper file not found."
+  # Find the index of the selected file
+  pic_index=-1
+  for i in "${!PICS[@]}"; do
+    filename=$(basename "${PICS[$i]}")
+    if [[ "$filename" == "$choice"* ]]; then
+      pic_index=$i
+      break
     fi
-else
-    echo "No wallpaper selected."
+  done
+
+  if [[ $pic_index -ne -1 ]]; then
+   swww img "${wallDIR}/${PICS[$pic_index]}" $SWWW_PARAMS
+  else
+    echo "Image not found."
+    exit 1
+  fi
+}
+
+# Check if rofi is already running
+if pidof rofi > /dev/null; then
+  pkill rofi
+  exit 0
 fi
 
-# Kill any running Waybar process
-pkill waybar
+main
 
-# Call a script to refresh Hyprpaper settings (if applicable)
-~/.config/hypr/scripts/refresh.sh
+wal -i ~/.config/rofi/.current_wallpaper
 
+~/.config/hypr/scripts/swww.sh
+
+_ps=(waybar)
+for _prs in "${_ps[@]}"; do
+    if pidof "${_prs}" >/dev/null; then
+        pkill "${_prs}"
+    fi
+done
+
+sleep 1
 # Relaunch waybar
 waybar &
 
+~/.config/hypr/scripts/refresh.sh
+
+pywal-discord
