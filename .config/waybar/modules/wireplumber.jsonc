@@ -2,7 +2,6 @@
 	"group/wireplumber": {
 		"orientation": "horizontal",
 		"modules": [
-      "tray",
 			"wireplumber#sink",
 			"wireplumber#source"
 		],

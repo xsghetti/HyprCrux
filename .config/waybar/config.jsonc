@@ -40,6 +40,7 @@
 		"custom/right_div#5"
 	],
 	"modules-right": [
+    "tray",
 		"custom/left_div#6",
 		"group/wireplumber",
 		"custom/left_div#7",
