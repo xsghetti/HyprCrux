@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Wybierz ikonę"
+    },
+    "currentCommands": {
+      "label": "Obecnie skonfigurowane polecenia"
+    },
+    "currentIconName": {
+      "desc": "Aktualnie skonfigurowana nazwa ikony.",
+      "label": "Identyfikator ikony"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Liczba aktualizacji"
+    },
+    "currentUpdateCmd": {
+      "label": "Aktualizacja systemu"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "Polecenie powłoki używane do przeprowadzania aktualizacji systemu.",
+      "label": "Niestandardowe polecenie aktualizacji systemu",
+      "placeholder": "np. yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Polecenie powłoki, które musi zwrócić pojedynczą liczbę całkowitą reprezentującą liczbę dostępnych aktualizacji.",
+      "label": "Własna komenda aktualizująca liczbę",
+      "placeholder": "np. yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Ukryj widżet, gdy liczba dostępnych aktualizacji wynosi 0.",
+      "label": "Ukryj przy braku aktualizacji"
+    },
+    "terminal": {
+      "desc": "Polecenie terminala używane do wykonywania polecenia aktualizacji systemu. Opcjonalne: {} dla polecenia aktualizacji.",
+      "label": "Emulator terminala",
+      "placeholder": "np. foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "Interwał odpytywania dla sprawdzania aktualizacji",
+      "label": "Interwał sprawdzania aktualizacji"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "Nie wykryto aktualizacji",
+    "updatesAvailable": "Kliknij, aby uruchomić skonfigurowane polecenie aktualizacji systemu"
+  }
+}

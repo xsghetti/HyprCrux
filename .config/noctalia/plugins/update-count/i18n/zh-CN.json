@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "选择图标"
+    },
+    "currentCommands": {
+      "label": "当前配置的命令"
+    },
+    "currentIconName": {
+      "desc": "当前配置的图标名称。",
+      "label": "图标标识"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "更新数量"
+    },
+    "currentUpdateCmd": {
+      "label": "系统更新"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "用于执行系统更新的 Shell 命令。",
+      "label": "自定义系统更新命令",
+      "placeholder": "例如：yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Shell 命令必须输出一个整数，表示可用更新的数量。",
+      "label": "自定义更新数量命令",
+      "placeholder": "例如：yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "当可用更新数为 0 时隐藏该小部件。",
+      "label": "零更新时隐藏"
+    },
+    "terminal": {
+      "desc": "用于执行系统更新命令的终端命令。可选：使用 {} 代表更新命令占位符。",
+      "label": "终端模拟器",
+      "placeholder": "例如：foot -e，hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "更新检查的轮询间隔",
+      "label": "检查间隔"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "未检测到更新",
+    "updatesAvailable": "点击运行已配置的系统更新命令"
+  }
+}

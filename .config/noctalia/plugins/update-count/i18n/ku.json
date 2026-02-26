@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Îkon Hilbijêre"
+    },
+    "currentCommands": {
+      "label": "Niha emrên hatine sazkirin"
+    },
+    "currentIconName": {
+      "desc": "Navê îkona ku niha hatiye vesazkirin.",
+      "label": "Nasnameya Îkonê"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Hejmara nûvekirinê"
+    },
+    "currentUpdateCmd": {
+      "label": "Nûkirina sîstemê"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "Fermana şêlê ya ku ji bo pêkanîna nûvekirina pergalê tê bikaranîn.",
+      "label": "Fermana Nûvekirina Sîstemê ya Xweser",
+      "placeholder": "mînak, yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Fermana shellê ya ku divê yek hejmarek temam derxe ku hejmara nûvekirinên berdest nîşan dide.",
+      "label": "Fermana Jimartinê ya Hejmara Nûvekirinê ya Xweser",
+      "placeholder": "mînak, yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Demaşê widgetê gava jimara nûkirinên berdest 0 be.",
+      "label": "Veşartin li ser Nûkirinên Sifir"
+    },
+    "terminal": {
+      "desc": "Fermana termînalê ya ku ji bo pêkanîna fermana nûvekirina pergalê tê bikaranîn. Vebijêrkî: {} ji bo fermana nûvekirinê.",
+      "label": "Emulatorê Termînalê",
+      "placeholder": "mînak, foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "Demê dûrî ji bo kontrolên nûvekirinê",
+      "label": "Demê Kontrolkirina Nûvekirinê"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "Tu nûvekirin hatin dîtin",
+    "updatesAvailable": "Bitikîne da fermana nûkirina pergalê ya hatî vesazkirin bimeşîne"
+  }
+}

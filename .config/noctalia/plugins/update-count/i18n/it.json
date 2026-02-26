@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Seleziona icona"
+    },
+    "currentCommands": {
+      "label": "Comandi attualmente configurati"
+    },
+    "currentIconName": {
+      "desc": "Nome icona attualmente configurato.",
+      "label": "Identificatore icona"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Conteggio aggiornamenti"
+    },
+    "currentUpdateCmd": {
+      "label": "Aggiornamento di sistema"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "Comando shell usato per effettuare l’aggiornamento di sistema.",
+      "label": "Comando personalizzato di aggiornamento",
+      "placeholder": "es., yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Comando shell che deve stampare un singolo intero che rappresenta il numero di aggiornamenti disponibili.",
+      "label": "Comando personalizzato per conteggio",
+      "placeholder": "es., yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Nasconde il widget quando il numero di aggiornamenti disponibili è 0.",
+      "label": "Nascondi con 0 aggiornamenti"
+    },
+    "terminal": {
+      "desc": "Comando del terminale usato per eseguire il comando di aggiornamento di sistema. Opzionale: {} per il comando di aggiornamento.",
+      "label": "Emulatore di terminale",
+      "placeholder": "es., foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "Intervallo di polling per i controlli aggiornamenti",
+      "label": "Intervallo di verifica"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "Nessun aggiornamento rilevato",
+    "updatesAvailable": "Clicca per eseguire il comando di aggiornamento di sistema configurato"
+  }
+}

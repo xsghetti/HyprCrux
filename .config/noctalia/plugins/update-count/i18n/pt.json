@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Selecionar ícone"
+    },
+    "currentCommands": {
+      "label": "Comandos atualmente configurados"
+    },
+    "currentIconName": {
+      "desc": "Nome do ícone atualmente configurado.",
+      "label": "Identificador do ícone"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Contagem de atualizações"
+    },
+    "currentUpdateCmd": {
+      "label": "Atualização do sistema"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "Comando de shell usado para efetuar a atualização do sistema.",
+      "label": "Comando personalizado de atualização do sistema",
+      "placeholder": "ex.: yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Comando de shell que deve imprimir um único inteiro representando o número de atualizações disponíveis.",
+      "label": "Comando personalizado para contagem de atualizações",
+      "placeholder": "ex.: yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Oculta o widget quando o número de atualizações disponíveis é 0.",
+      "label": "Ocultar com 0 atualizações"
+    },
+    "terminal": {
+      "desc": "Comando de terminal usado para executar o comando de atualização do sistema. Opcional: {} para o comando de atualização.",
+      "label": "Emulador de terminal",
+      "placeholder": "ex.: foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "Intervalo de polling para verificações de atualizações",
+      "label": "Intervalo de verificação de atualizações"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "Nenhuma atualização detetada",
+    "updatesAvailable": "Clique para executar o comando de atualização do sistema configurado"
+  }
+}

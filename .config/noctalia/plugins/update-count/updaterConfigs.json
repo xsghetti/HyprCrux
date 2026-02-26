@@ -1,0 +1,32 @@
+[
+  {
+    "name": "yay",
+    "cmdCheck": "command -v checkupdates >/dev/null 2>&1 && command -v yay >/dev/null 2>&1",
+    "cmdGetNumUpdates": "(checkupdates 2>/dev/null; yay -Qua 2>/dev/null) | wc -l",
+    "cmdDoSystemUpdate": "yay -Syu"
+  },
+  {
+    "name": "paru",
+    "cmdCheck": "command -v checkupdates >/dev/null 2>&1 && command -v paru >/dev/null 2>&1",
+    "cmdGetNumUpdates": "(checkupdates 2>/dev/null; paru -Qua 2>/dev/null) | wc -l",
+    "cmdDoSystemUpdate": "paru -Syu"
+  },
+  {
+    "name": "pacman",
+    "cmdCheck": "command -v pacman >/dev/null 2>&1",
+    "cmdGetNumUpdates": "pacman -Quq 2>/dev/null | wc -l",
+    "cmdDoSystemUpdate": "sudo pacman -Syu"
+  },
+  {
+    "name": "dnf",
+    "cmdCheck": "command -v dnf >/dev/null 2>&1",
+    "cmdGetNumUpdates": "dnf check-update -q | grep -c ^[a-z0-9]",
+    "cmdDoSystemUpdate": "sudo dnf upgrade"
+  },
+  {
+    "name": "xbps",
+    "cmdCheck": "command -v xbps-install >/dev/null 2>&1",
+    "cmdGetNumUpdates": "xbps-install -Mnu 2>&1 | grep -v '^$' | wc -l",
+    "cmdDoSystemUpdate": "sudo xbps-install -Su"
+  }
+]

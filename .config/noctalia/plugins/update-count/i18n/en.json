@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Select Icon"
+    },
+    "currentCommands": {
+      "label": "Currently configured commands"
+    },
+    "currentIconName": {
+      "desc": "Currently configured icon name.",
+      "label": "Icon Identifier"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Update count"
+    },
+    "currentUpdateCmd": {
+      "label": "System update"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "Shell command used to perform the system update.",
+      "label": "Custom System Update Command",
+      "placeholder": "e.g., yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Shell command that must output a single integer representing the number of available updates.",
+      "label": "Custom Update Count Command",
+      "placeholder": "e.g., yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Hide the widget when the available update count is 0.",
+      "label": "Hide on Zero Updates"
+    },
+    "terminal": {
+      "desc": "Terminal command used to execute the system update command. Optional: {} for update command.",
+      "label": "Terminal Emulator",
+      "placeholder": "e.g., foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "Polling interval for update checks",
+      "label": "Update Check Interval"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "No updates detected",
+    "updatesAvailable": "Click to run the configured system update command"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "選取圖示"
+    },
+    "currentCommands": {
+      "label": "現在所設定的指令"
+    },
+    "currentIconName": {
+      "desc": "現在所設定的圖示名稱",
+      "label": "圖示識別"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "更新數量"
+    },
+    "currentUpdateCmd": {
+      "label": "系統更新"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "用來執行系統更新的 shell 指令",
+      "label": "自訂系統更新指令",
+      "placeholder": "例如: yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "所使用的 shell 指令必須要輸出用來表示數量的整數值 (int)",
+      "label": "自訂更新數量指令",
+      "placeholder": "例如: yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "當可以更新的套件數量是0時隱藏小工具",
+      "label": "零更新時隱藏"
+    },
+    "terminal": {
+      "desc": "用來執行系統更新指令用的終端機指令; 可選用: 以 {} 作為更新指令",
+      "label": "終端機",
+      "placeholder": "例如 foot -e, hyprctl dispatch exec '[float] kitty -e {}'"
+    },
+    "updateInterval": {
+      "desc": "確認更新的時間間格",
+      "label": "更新檢查間格"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "沒有偵測到更新",
+    "updatesAvailable": "點擊以執行設定好的系統更新指令"
+  }
+}

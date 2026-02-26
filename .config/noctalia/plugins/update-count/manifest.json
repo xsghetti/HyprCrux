@@ -1,0 +1,27 @@
+{
+  "id": "update-count",
+  "name": "Update Count",
+  "version": "1.0.12",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "BukoMoon",
+  "license": "GPLv3",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "Checks for system updates and shows the update count. Click to run update command in a terminal.",
+  "tags": ["Bar", "System"],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "updateIntervalMinutes": 30,
+      "updateTerminalCommand": "foot -e",
+      "currentIconName": "world-download",
+      "hideOnZero": false
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "changeIcon": {
+      "label": "Ikon kiválasztása"
+    },
+    "currentCommands": {
+      "label": "Jelenleg beállított parancsok"
+    },
+    "currentIconName": {
+      "desc": "Jelenleg beállított ikon neve.",
+      "label": "Ikonazonosító"
+    },
+    "currentNumUpdatesCmd": {
+      "label": "Frissítések száma"
+    },
+    "currentUpdateCmd": {
+      "label": "Rendszerfrissítés"
+    },
+    "customCmdDoSystemUpdate": {
+      "desc": "A rendszerfrissítés végrehajtásához használt shell parancs.",
+      "label": "Egyedi rendszerfrissítési parancs",
+      "placeholder": "e.g., yay -Syu"
+    },
+    "customCmdGetNumUpdates": {
+      "desc": "Shell parancs, amelynek egyetlen egész számot kell kiírnia, ami a rendelkezésre álló frissítések számát jelöli.",
+      "label": "Egyéni frissítésszám parancs",
+      "placeholder": "e.g., yay -Quq 2>/dev/null | wc -l"
+    },
+    "hideWidget": {
+      "desc": "Akkor rejtse el a widgetet, ha a rendelkezésre álló frissítések száma 0.",
+      "label": "Elrejtés nulla frissítés esetén"
+    },
+    "terminal": {
+      "desc": "A rendszerfrissítés végrehajtásához használt terminálparancs. Opcionális: {} a frissítési parancshoz.",
+      "label": "Terminálemulátor",
+      "placeholder": "pl.: foot -e, hyprctl dispatch exec '[float] kitty -e {}'-plural"
+    },
+    "updateInterval": {
+      "desc": "Lekérdezési időtartam a frissítések ellenőrzéséhez",
+      "label": "Frissítések ellenőrzésének gyakorisága"
+    }
+  },
+  "tooltip": {
+    "noUpdatesAvailable": "Nincsenek észlelt frissítések",
+    "updatesAvailable": "Kattintson a beállított rendszerfrissítési parancs futtatásához"
+  }
+}
