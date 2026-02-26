@@ -9,7 +9,8 @@
     
 ![GitHub Repo stars](https://img.shields.io/github/stars/xsghetti/dotfiles?style=for-the-badge&logo=github&color=pink)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/xsghetti/hyprcrux?style=for-the-badge&logo=github&color=lightgreen)
-![Static Badge](https://img.shields.io/badge/hypr-crux-lightblue?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/hypr-crux-lightblue?style=for-the-badge)<br>
+![](https://dcbadge.limes.pink/api/shield/146459065432801280?theme=clean)
 
 </div>
 
@@ -17,52 +18,31 @@
 >  these are my personal dots and may not work for you.<br>
 >  My configs are messy as I'm not a dev, so use at your own risk.
 
+> [!TIP]
+> Brand new install script found [here](https://github.com/xsghetti/hyprcrux-install)!
 
-![terminals](https://github.com/xsghetti/HyprCrux/assets/150515748/8a8849b3-8d3c-4548-bd38-927bd041f31a)
-![240324_20h17m04s_screenshot](https://github.com/xsghetti/dotfiles/assets/150515748/bf1ec92c-45ee-4c93-9270-a08a90e98c9b)
-![agsoverview1](https://github.com/xsghetti/HyprCrux/assets/150515748/683b0dd4-7924-431e-b047-ddd52a77f9d4)
-![home](https://github.com/xsghetti/dotfiles/assets/150515748/554d17b3-393d-4970-85c6-9b83fa1ecfff)
-![hyprexpo](https://github.com/xsghetti/HyprCrux/assets/150515748/b7434518-0ba2-4247-9422-946e2ba6a629)
-![rofi](https://github.com/xsghetti/dotfiles/assets/150515748/593456f2-b3aa-4943-8578-53b59d106814)
-![wallpaperselector](https://github.com/xsghetti/dotfiles/assets/150515748/f622a625-630c-4eda-bc3e-5298dac5ce99)
-![swaync](https://github.com/xsghetti/dotfiles/assets/150515748/d0a9d774-8686-43d1-9d8f-f7c5c88bb047)
-![hyprlock](https://github.com/xsghetti/HyprCrux/assets/150515748/0b539e20-bb9e-419b-9f38-640aa4626fc1)
+
+![desktop](https://github.com/user-attachments/assets/49240ca0-72c1-4dbe-9b1a-b5cc1e28e62e)
+![overview](https://github.com/user-attachments/assets/741c5dc4-70bc-4d5c-8328-0ca5df6fb216)
+![dashboard](https://github.com/user-attachments/assets/7d990e2f-5a1c-4b30-b6e5-6b91d5865af2)
+![wallpaperselect](https://github.com/user-attachments/assets/1329cca1-07f2-4abf-a7ef-7f09018bc6dc)
+
+
+
+
+
 
 
 ## Depenencies <br>
 >  [hyprland](https://hyprland.org)<br>
->  [hyprlock](https://github.com/hyprwm/hyprlock)<br>
->  [pywal](https://github.com/dylanaraps/pywal) <br>
->  [swaync](https://github.com/ErikReider/SwayNotificationCenter)<br>
->  [rofi](https://github.com/davatorium/rofi)<br>
->  [ags](https://github.com/Aylur/ags)<br>
+>  [noctalia-shell](https://github.com/noctalia-dev/noctalia-shell)
 ## Plugins <br>
->  [hyprexpo](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo)<br>
->  [hyprtrails](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprtrails) <br>
 >  [pyprland](https://github.com/hyprland-community/pyprland) <br>
 
 
-This configuration utilizes two official [Hyprland](https://hyprland.org) plugins. <br>
-To install these plugins run the following command.
 
 
-    hyprpm update
-    
-<br>
-    
-    hyprpm add https://github.com/hyprwm/hyprland-plugins
-<br>
-    
-    hyprpm enable hyprexpo
-<br>
-    
-    hyprpm enable hyprtrails
-<br>
 
->[!Note]
->To get cava working with pywal - symlink the template to cava/config
-
-    ln -sf "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config" || true
 
 
 <table><tr><td>
