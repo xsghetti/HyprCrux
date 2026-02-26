@@ -1,0 +1,289 @@
+[
+    {
+        "active_tab_history": [],
+        "background_opacity": 1.0,
+        "id": 1,
+        "is_active": true,
+        "is_focused": false,
+        "last_focused": true,
+        "platform_window_id": null,
+        "tabs": [
+            {
+                "active_window_history": [
+                    3,
+                    4,
+                    1,
+                    2
+                ],
+                "enabled_layouts": [
+                    "splits"
+                ],
+                "groups": [
+                    {
+                        "id": 1,
+                        "windows": [
+                            1
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "windows": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "windows": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "windows": [
+                            4
+                        ]
+                    }
+                ],
+                "id": 1,
+                "is_active": true,
+                "is_focused": false,
+                "layout": "splits",
+                "layout_opts": {
+                    "default_axis_is_horizontal": true
+                },
+                "layout_state": {
+                    "all_windows": {
+                        "active_group_history": [
+                            3,
+                            4,
+                            1,
+                            2
+                        ],
+                        "active_group_idx": 0,
+                        "window_groups": [
+                            {
+                                "id": 1,
+                                "window_ids": [
+                                    1
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "window_ids": [
+                                    2
+                                ]
+                            },
+                            {
+                                "id": 3,
+                                "window_ids": [
+                                    3
+                                ]
+                            },
+                            {
+                                "id": 4,
+                                "window_ids": [
+                                    4
+                                ]
+                            }
+                        ]
+                    },
+                    "class": "Splits",
+                    "opts": {
+                        "default_axis_is_horizontal": true
+                    },
+                    "pairs": {
+                        "bias": 0.6,
+                        "one": 1,
+                        "two": {
+                            "bias": 0.33999999999999997,
+                            "horizontal": false,
+                            "one": 2,
+                            "two": {
+                                "horizontal": false,
+                                "one": 3,
+                                "two": 4
+                            }
+                        }
+                    }
+                },
+                "title": "btop",
+                "windows": [
+                    {
+                        "at_prompt": false,
+                        "cmdline": [
+                            "btop"
+                        ],
+                        "columns": 54,
+                        "created_at": 1771574045098670505,
+                        "cwd": "/proc/211951/cwd",
+                        "env": {
+                            "KITTY_WINDOW_ID": "1"
+                        },
+                        "foreground_processes": [
+                            {
+                                "cmdline": [
+                                    "btop"
+                                ],
+                                "cwd": "/proc/211951/cwd",
+                                "pid": 211951
+                            }
+                        ],
+                        "id": 1,
+                        "in_alternate_screen": true,
+                        "is_active": true,
+                        "is_focused": false,
+                        "is_self": true,
+                        "last_cmd_exit_status": 0,
+                        "last_reported_cmdline": "",
+                        "lines": 52,
+                        "neighbors": {
+                            "right": [
+                                2,
+                                3,
+                                4
+                            ]
+                        },
+                        "pid": 211951,
+                        "title": "btop",
+                        "user_vars": {}
+                    },
+                    {
+                        "at_prompt": false,
+                        "cmdline": [
+                            "cava"
+                        ],
+                        "columns": 33,
+                        "created_at": 1771574045495777720,
+                        "cwd": "/home/teez",
+                        "env": {
+                            "KITTY_WINDOW_ID": "2"
+                        },
+                        "foreground_processes": [
+                            {
+                                "cmdline": [
+                                    "cava"
+                                ],
+                                "cwd": "/home/teez",
+                                "pid": 212014
+                            }
+                        ],
+                        "id": 2,
+                        "in_alternate_screen": false,
+                        "is_active": false,
+                        "is_focused": false,
+                        "is_self": false,
+                        "last_cmd_exit_status": 0,
+                        "last_reported_cmdline": "",
+                        "lines": 15,
+                        "neighbors": {
+                            "bottom": [
+                                3
+                            ],
+                            "left": [
+                                1
+                            ]
+                        },
+                        "pid": 212014,
+                        "title": "cava",
+                        "user_vars": {}
+                    },
+                    {
+                        "at_prompt": false,
+                        "cmdline": [
+                            "tty-clock",
+                            "-c",
+                            "-S",
+                            "-s",
+                            "-n"
+                        ],
+                        "columns": 33,
+                        "created_at": 1771574045600498245,
+                        "cwd": "/home/teez",
+                        "env": {
+                            "KITTY_WINDOW_ID": "3"
+                        },
+                        "foreground_processes": [
+                            {
+                                "cmdline": [
+                                    "tty-clock",
+                                    "-c",
+                                    "-S",
+                                    "-s",
+                                    "-n"
+                                ],
+                                "cwd": "/home/teez",
+                                "pid": 212034
+                            }
+                        ],
+                        "id": 3,
+                        "in_alternate_screen": true,
+                        "is_active": false,
+                        "is_focused": false,
+                        "is_self": false,
+                        "last_cmd_exit_status": 0,
+                        "last_reported_cmdline": "",
+                        "lines": 14,
+                        "neighbors": {
+                            "bottom": [
+                                4
+                            ],
+                            "left": [
+                                1
+                            ],
+                            "top": [
+                                2
+                            ]
+                        },
+                        "pid": 212034,
+                        "title": "tty-clock",
+                        "user_vars": {}
+                    },
+                    {
+                        "at_prompt": false,
+                        "cmdline": [
+                            "/home/teez/.local/share/pipx/venvs/terminal-rain-lightning/bin/python",
+                            "/home/teez/.local/bin/terminal-rain"
+                        ],
+                        "columns": 33,
+                        "created_at": 1771574045651208437,
+                        "cwd": "/home/teez",
+                        "env": {
+                            "KITTY_WINDOW_ID": "4"
+                        },
+                        "foreground_processes": [
+                            {
+                                "cmdline": [
+                                    "/home/teez/.local/share/pipx/venvs/terminal-rain-lightning/bin/python",
+                                    "/home/teez/.local/bin/terminal-rain"
+                                ],
+                                "cwd": "/home/teez",
+                                "pid": 212046
+                            }
+                        ],
+                        "id": 4,
+                        "in_alternate_screen": true,
+                        "is_active": false,
+                        "is_focused": false,
+                        "is_self": false,
+                        "last_cmd_exit_status": 0,
+                        "last_reported_cmdline": "",
+                        "lines": 14,
+                        "neighbors": {
+                            "left": [
+                                1
+                            ],
+                            "top": [
+                                3
+                            ]
+                        },
+                        "pid": 212046,
+                        "title": "terminal-rain",
+                        "user_vars": {}
+                    }
+                ]
+            }
+        ],
+        "wm_class": "kitty",
+        "wm_name": "kitty"
+    }
+]
